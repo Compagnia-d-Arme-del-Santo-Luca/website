@@ -1,18 +1,18 @@
 services:
   devcontainer:
-    image: m-tartari.github.io-dev
+    image: website-dev
     build:
       context: ..
       dockerfile: Dockerfile
       target: development
-    container_name: devcontainer-m-tartari.github.io
-    hostname: m-tartari.github.io-dev
+    container_name: devcontainer-website
+    hostname: website-dev
     command: sleep infinity
     # ports:
     #   - '5173:5173'
     #   - '4173:4173'
     volumes:
-      - ..:/workspaces/m-tartari.github.io:cached
+      - ..:/workspaces/website:cached
     # Uncomment the next four lines if you will use a ptrace-based debugger like C++, Go, and Rust.
     # cap_add:
     #   - SYS_PTRACE

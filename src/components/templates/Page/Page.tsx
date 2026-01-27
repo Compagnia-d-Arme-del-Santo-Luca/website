@@ -14,7 +14,7 @@ interface PageProps extends BoxProps {
 const Page: React.FC<PageProps> = ({ title, children, showCookieConsent, ...props }) => {
   React.useEffect(() => {
     if (title) {
-      document.title = `Michele Tartari - ${title}`
+      document.title = `Compagnia d'Arme del Santo Luca - ${title}`
     }
   }, [title])
 

@@ -17,22 +17,22 @@ describe('ContactPage', () => {
 
     expect(screen.getAllByText('Contacts')).toHaveLength(2) // Page title and the Appbar drawer link
     expect(screen.getByLabelText('Email link')).toBeInTheDocument()
-    expect(screen.getByLabelText('LinkedIn link')).toBeInTheDocument()
-    expect(screen.getByLabelText('GitHub link')).toBeInTheDocument()
+    expect(screen.getByLabelText('Facebook Link')).toBeInTheDocument()
+    expect(screen.getByLabelText('Instagram link')).toBeInTheDocument()
   })
 
   test.each([
     {
       label: 'Email link',
-      href: 'mailto:info@m-tartari.eu',
+      href: 'mailto:compagniasantoluca@gmail.com',
     },
     // {
-    //   label: 'LinkedIn link',
-    //   href: 'https://www.linkedin.com/in/m-tartari/',
+    //   label: 'Facebook Link',
+    //   href: 'https://facebook.com/compagniadarmedelsantoluca/',
     // },
     // {
-    //   label: 'GitHub link',
-    //   href: 'https://www.github.com/m-tartari/',
+    //   label: 'Instagram link',
+    //   href: 'https://www.instagram.com/compagnia_darme_santo_luca/',
     // },
   ])('leads to the right place when the $label is clicked', ({ label, href }) => {
     render(<ContactPage />)

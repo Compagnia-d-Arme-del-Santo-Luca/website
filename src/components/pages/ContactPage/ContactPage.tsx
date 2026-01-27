@@ -1,7 +1,7 @@
 import { Link, List, ListItem, Stack, Typography } from '@mui/material'
 import DraftsIcon from '@mui/icons-material/Drafts'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import GitHubIcon from '@mui/icons-material/GitHub'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import Instagram from '@mui/icons-material/Instagram'
 
 import { Page } from 'components/templates/index.js'
 
@@ -39,29 +39,29 @@ const ListItemLink: React.FC<ListItemProps> = ({ children, ...props }) => (
 
 const ContactPage = () => {
   return (
-    <Page title="Contacts">
+    <Page title="Contatti">
       <Typography align="left" variant="h6">
-        Feel free to contact me using any of the following:
+        Sentiti libero di contattatarci con uno qualsiasi dei seguenti:
       </Typography>
       <List>
-        <ListItemLink href="mailto:info@m-tartari.eu" aria-label="Email link">
+        <ListItemLink href="mailto:compagniasantoluca@gmail.com" aria-label="Email link">
           <DraftsIcon fontSize="large" />
           <Typography variant="h6" ml={2}>
-            info
+            compagniasantoluca
             <wbr />
-            @m-tartari.eu
+            @gmail.com
           </Typography>
         </ListItemLink>
-        <ListItemLink aria-label="LinkedIn link" href="https://www.linkedin.com/in/m-tartari/">
-          <LinkedInIcon fontSize="large" />
+        <ListItemLink aria-label="Facebook Link" href="https://facebook.com/compagniadarmedelsantoluca">
+          <FacebookIcon fontSize="large" />
           <Typography variant="h6" ml={2}>
-            m-tartari
+            @compagniadarmedelsantoluca
           </Typography>
         </ListItemLink>
-        <ListItemLink aria-label="GitHub link" href="https://www.github.com/m-tartari/">
-          <GitHubIcon fontSize="large" />
+        <ListItemLink aria-label="Instagram link" href="https://www.instagram.com/compagnia_darme_santo_luca/">
+          <Instagram fontSize="large" />
           <Typography variant="h6" ml={2}>
-            m-tartari
+            @compagnia_darme_santo_luca
           </Typography>
         </ListItemLink>
       </List>

@@ -10,7 +10,7 @@ type AnchorType = 'left' | 'top' | 'right' | 'bottom'
 type Props = {
   image: string
   title: string
-  caption: React.ReactNode
+  caption?: React.ReactNode
   children: React.ReactNode
   mobileImage?: string
   ref?: React.ForwardedRef<HTMLSelectElement>
@@ -30,7 +30,7 @@ const Description = (props: Props) => {
             justifyContent: 'center',
 
             position: 'absolute',
-            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(230, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
+            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(155, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
             backdropFilter: 'blur(8px)',
             bottom: '0',
 
@@ -57,7 +57,7 @@ const Description = (props: Props) => {
             display: 'flex',
             position: 'absolute',
 
-            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(230, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
+            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(155, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
             backdropFilter: 'blur(8px)',
             top: '0',
             ml: 'auto',
@@ -86,7 +86,7 @@ const Description = (props: Props) => {
             height: '102%',
             width: '28em',
             position: 'absolute',
-            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(230, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
+            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(155, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
             backdropFilter: 'blur(8px)',
             right: '0',
             borderLeftWidth: theme.spacing(0.5),
@@ -108,7 +108,7 @@ const Description = (props: Props) => {
             height: '102%',
             width: '28em',
             position: 'absolute',
-            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(230, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
+            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(155, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
             backdropFilter: 'blur(8px)',
             left: '0',
             borderRightWidth: theme.spacing(0.5),

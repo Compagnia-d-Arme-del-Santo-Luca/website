@@ -24,8 +24,9 @@ const PrivacyPolicy: React.FC = () => {
 
       <SectionSubheader>Introduction</SectionSubheader>
       <Typography component="p" color="textSecondary">
-        m-tartari ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This privacy policy will inform you
-        about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
+        Compagnia d'Arme del Santo Luca ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This privacy
+        policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how
+        the law protects you.
       </Typography>
 
       <SectionSubheader sx={{ mt: 4 }}>The Data We Collect About You</SectionSubheader>
@@ -101,8 +102,8 @@ const PrivacyPolicy: React.FC = () => {
       <SectionSubheader sx={{ mt: 4 }}>Contact Us</SectionSubheader>
       <Typography component="p" color="textSecondary">
         If you have any questions about this privacy policy or our privacy practices, please contact us at{' '}
-        <Link color="textPrimary" href="mailto:privacy@m-tartari.eu" target="_blank" rel="noopener noreferrer">
-          privacy@m-tartari.eu
+        <Link color="textPrimary" href="mailto:compagniasantoluca@gmail.com" target="_blank" rel="noopener noreferrer">
+          compagniasantoluca@gmail.com
         </Link>
         .
       </Typography>

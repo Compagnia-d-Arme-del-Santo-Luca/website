@@ -2,7 +2,7 @@ import React from 'react'
 import { Avatar, Box, IconButton, Stack, Typography } from '@mui/material'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 
-import { EmailIconLink, GitHubIconLink, LinkedInIconLink } from 'components/atoms/IconLinks/index.js'
+import { EmailIconLink, InstagramIconLink, FacebookIconLink } from 'components/atoms/IconLinks/index.js'
 
 const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) => {
   return (
@@ -13,7 +13,7 @@ const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) =
         minHeight: '100vh',
         boxShadow: '0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25)',
 
-        backgroundImage: 'url("images/banner.webp")',
+        backgroundImage: 'url("images/banner2.webp")',
         backgroundPosition: 'center center',
         backgroundAttachment: { xs: 'scroll !important', md: 'fixed' },
         backgroundSize: 'cover',
@@ -23,10 +23,10 @@ const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) =
         wrap: 'wrap',
 
         ...(theme.palette.mode === 'dark' && {
-          backgroundImage: 'url("images/banner-blur.webp")',
+          backgroundImage: 'url("images/banner2.png")',
         }),
         ...(theme.palette.mode === 'light' && {
-          backgroundImage: 'url("images/banner.webp")',
+          backgroundImage: 'url("images/banner2.png")',
           '&::before': {
             content: '""',
             position: 'absolute',
@@ -66,35 +66,33 @@ const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) =
           },
         })}>
         <Box>
-          <Typography variant="h1">
-            Robotics
-            <br /> Engineer
+          <Typography component="h1" variant="h1" maxWidth="md">
+            Compagnia d'Arme{' '}
+            <Typography component="small" variant="h2">
+              del
+            </Typography>{' '}
+            Santo Luca
           </Typography>
-          <Typography
-            variant="h6"
-            color="text.secondary"
-            sx={{
-              color: t => (t.palette.mode === 'light' ? 'inherit' : 'text.secondary'),
-              margin: '0.5em 0 0 0',
-              pt: 1,
-            }}>
-            Discover some of my works below.
-            <br /> Send a message to get in touch.
-          </Typography>
+          <Typography variant="h3">Ferrara</Typography>
           <Stack
             direction="row"
             gap={2}
             mt={2}
             justifyContent={{ xs: 'center', md: 'end' }}
             color={t => (t.palette.mode === 'light' ? 'inherit' : 'text.secondary')}>
-            <LinkedInIconLink fontSize="large" href="https://www.linkedin.com/in/m-tartari/" />
-            <GitHubIconLink fontSize="large" href="https://www.github.com/m-tartari/" />
-            <EmailIconLink fontSize="large" href="mailto:info@m-tartari.eu" />
+            <EmailIconLink fontSize="large" sx={{ ':hover': { color: 'text.primary' } }} href="mailto:compagniasantoluca@gmail.com" />
+            <FacebookIconLink fontSize="large" sx={{ ':hover': { color: 'text.primary' } }} href="https://facebook.com/compagniadarmedelsantoluca/" />
+            <InstagramIconLink
+              fontSize="large"
+              sx={{ ':hover': { color: 'text.primary' } }}
+              href="https://www.instagram.com/compagnia_darme_santo_luca/"
+            />
           </Stack>
         </Box>
         <Avatar
           alt="Avatar"
-          src="images/me.jpg"
+          src="logo.png"
+          variant="square"
           sx={{
             display: 'inline-block',
             verticalAlign: 'middle',

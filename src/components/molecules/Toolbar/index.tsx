@@ -74,8 +74,15 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
         textAlign: 'center',
         ...(theme.palette.mode === 'light' && { backgroundColor: 'background.default' }),
       })}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Michele Tartari
+      <Typography
+        variant="h6"
+        sx={{
+          // fontFamily: '"Cloister Black", cursive',
+          textAlign: 'left',
+          m: 2,
+        }}>
+        Compagnia d'Arme <small>del</small>
+        <br /> Santo Luca
       </Typography>
       <Divider />
       <List>
@@ -84,19 +91,14 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
             <ListItemText primary="Home" />
           </DrawerButton>
         </ListItem>
-        <ListItem key="Projects" disablePadding>
-          <DrawerButton component={RouterLink} to="/projects">
-            <ListItemText primary="Projects" />
+        <ListItem key="Personaggi" disablePadding>
+          <DrawerButton component={RouterLink} to="/people">
+            <ListItemText primary="Personaggi" />
           </DrawerButton>
         </ListItem>
-        <ListItem key="Curriculum" disablePadding>
-          <DrawerButton component={RouterLink} to="/curriculum">
-            <ListItemText primary="Curriculum" />
-          </DrawerButton>
-        </ListItem>
-        <ListItem key="Contacts" disablePadding>
+        <ListItem key="Contatti" disablePadding>
           <DrawerButton component={RouterLink} to="/contacts">
-            <ListItemText primary="Contacts" />
+            <ListItemText primary="Contatti" />
           </DrawerButton>
         </ListItem>
       </List>
@@ -112,7 +114,7 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
           backgroundColor: 'transparent',
           '@media print': { backgroundColor: 'background.default' },
           ...(trigger && {
-            backgroundColor: 'hsla(230, 18%, 13%, 0.75)',
+            backgroundColor: 'hsla(155, 18%, 13%, 0.75)',
             backdropFilter: 'blur(8px)',
             boxShadow: theme.shadows[4],
           }),
@@ -134,7 +136,6 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
             // [theme.breakpoints.up('md')]: { width: theme => theme.breakpoints.values.lg, mx: 'auto' },
           }}>
           <IconButton
-            color="primary"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -154,14 +155,13 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
               [theme.breakpoints.down('md')]: { mx: 'auto' },
               [theme.breakpoints.up('md')]: { mr: 'auto' },
             })}>
-            Michele Tartari
+            Compagnia d'Arme del Santo Luca
           </AppBarLink>
           <Stack component="div" direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
             <AppBarLink to="/">Home</AppBarLink>
-            <AppBarLink to="/projects">Projects</AppBarLink>
-            <AppBarLink to="/curriculum">Curriculum</AppBarLink>
+            <AppBarLink to="/people">Personaggi</AppBarLink>
             <Button component={RouterLink} to="/contacts" color="primary" variant="contained" sx={{ textTransform: 'none' }}>
-              <Typography variant="h6">Hire me</Typography>
+              <Typography variant="h6">Contattaci</Typography>
             </Button>
           </Stack>
         </Toolbar>
@@ -173,10 +173,15 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
         ModalProps={{
           keepMounted: true, // Better open performance on mobile.
         }}
-        sx={{
+        sx={theme => ({
           display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-        }}>
+          '& .MuiDrawer-paper': {
+            boxSizing: 'border-box',
+            width: drawerWidth,
+            backgroundColor: theme.palette.mode === 'dark' ? 'hsla(155, 18%, 13%, 0.85)' : 'hsla(0, 0%, 100%, 0.75)',
+            backdropFilter: 'blur(8px)',
+          },
+        })}>
         {drawer}
       </Drawer>
     </>

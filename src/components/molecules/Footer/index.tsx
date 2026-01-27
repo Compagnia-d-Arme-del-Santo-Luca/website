@@ -4,7 +4,7 @@ import { Box, Link, Stack, Typography } from '@mui/material'
 import PolicyIcon from '@mui/icons-material/Policy'
 import CookieIcon from '@mui/icons-material/Cookie'
 
-import { EmailIconLink, GitHubIconLink, LinkedInIconLink } from 'components/atoms/IconLinks/index.js'
+import { EmailIconLink, InstagramIconLink, FacebookIconLink } from 'components/atoms/IconLinks/index.js'
 import CookieConsent from 'components/molecules/CookieConsent/index.js'
 
 type FooterProps = {
@@ -26,13 +26,13 @@ const Footer: React.FC<FooterProps> = ({ showCookieConsent = true }) => {
         '@media print': { py: 3 },
       }}>
       <Stack direction="row" gap={2}>
-        <LinkedInIconLink fontSize="large" href="https://www.linkedin.com/in/m-tartari/" />
-        <GitHubIconLink fontSize="large" href="https://www.github.com/m-tartari/" />
-        <EmailIconLink fontSize="large" href="mailto:info@m-tartari.eu" />
+        <EmailIconLink fontSize="large" href="mailto:compagniasantoluca@gmail.com" />
+        <FacebookIconLink fontSize="large" href="https://facebook.com/compagniadarmedelsantoluca/" />
+        <InstagramIconLink fontSize="large" href="https://www.instagram.com/compagnia_darme_santo_luca/" />
       </Stack>
 
       <Typography variant="subtitle2" align="center" color="text.secondary" component="em" mt={3}>
-        © {year} Michele Tartari. All rights reserved.
+        © {year} Compagnia d'Arme del Santo Luca. All rights reserved.
       </Typography>
 
       <Stack mt={1}>

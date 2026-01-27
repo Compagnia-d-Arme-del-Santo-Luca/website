@@ -7,7 +7,7 @@ interface ImportMetaEnv {
   readonly VITE_BC_VAT: string
   readonly VITE_BC_PHONE: string
   readonly VITE_BC_EMAIL: string
-  readonly VITE_BC_LINKEDIN: string
+  readonly VITE_BC_FACEBOOK: string
 }
 
 interface ImportMeta {

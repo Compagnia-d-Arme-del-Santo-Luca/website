@@ -1,13 +1,13 @@
-version: '3.8'
+version: "3.8"
 
 services:
   app:
-    image: git.m-tartari.eu/m-tartari.github.io
+    image: git.m-tartari.eu/website
     build:
       context: .
       dockerfile: Dockerfile
       target: production
-    container_name: m-tartari.github.io
+    container_name: website
     restart: unless-stopped
     ports:
-      - '8080:8080'
+      - "8080:8080"

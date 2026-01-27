@@ -1,5 +1,19 @@
-import { Box, Typography, Stack, Button, Paper, Link, TypographyProps, SvgIcon, PaperProps, ThemeProvider, createTheme } from '@mui/material'
-import { Email, LinkedIn, Print, PhoneInTalk, Public } from '@mui/icons-material'
+import {
+  Box,
+  Typography,
+  Stack,
+  Button,
+  Paper,
+  Link,
+  TypographyProps,
+  SvgIcon,
+  PaperProps,
+  ThemeProvider,
+  createTheme,
+  SxProps,
+  Theme,
+} from '@mui/material'
+import { Email, Facebook, Print, PhoneInTalk, Public, Instagram } from '@mui/icons-material'
 
 import { Page } from 'components/templates/index.js'
 import typography from 'style/typography/index.js'
@@ -43,8 +57,9 @@ type BusinessCardProps = {
   mode?: 'light' | 'dark'
   src: string
   alt?: string
+  srcSx?: SxProps<Theme>
 } & PaperProps
-const BusinessCard = ({ mode = 'dark', src, alt, sx, ...props }: BusinessCardProps) => (
+const BusinessCard = ({ mode = 'dark', src, srcSx, alt, sx, ...props }: BusinessCardProps) => (
   <ThemeProvider theme={theme[mode]}>
     <Paper
       className="print-business-card"
@@ -85,6 +100,7 @@ const BusinessCard = ({ mode = 'dark', src, alt, sx, ...props }: BusinessCardPro
           height: 'fit-content',
           objectFit: 'cover',
           // borderRadius: '50%',
+          ...srcSx,
         }}
       />
 
@@ -119,14 +135,7 @@ const BusinessCardPage = () => {
             gap: 0,
           },
         }}>
-        <BusinessCard src="/fav-icon.svg" alt="logo">
-          <Typography variant="h5" component="h1" fontFamily="Oswald, sans-serif" textTransform="uppercase" fontWeight={700}>
-            {env.NAME}
-          </Typography>
-          <Typography variant="subtitle2" color="text.secondary" sx={{ fontSize: '0.55rem', mb: 0.5 }}>
-            {env.POSITION}
-          </Typography>
-        </BusinessCard>
+        <BusinessCard src="/logo_text.png" alt="logo" srcSx={{ width: '100%' }} />
 
         <BusinessCard src="/images/qr.svg" alt="Qr Code" mode="light">
           <Stack
@@ -146,19 +155,24 @@ const BusinessCardPage = () => {
               {env.NAME}
             </Typography>
             <Typography variant="caption" color="text.secondary" fontSize="0.55rem" mb={0.5}>
-              {env.VAT}
+              {env.POSITION}
             </Typography>
-            <TypographyLink icon={PhoneInTalk} href={`tel:${env.PHONE.replace(/[^\d+]/g, '').replace(/^\+?/, '+')}`}>
-              {env.PHONE}
-            </TypographyLink>
+            {env.PHONE != null && (
+              <TypographyLink icon={PhoneInTalk} href={`tel:${env.PHONE.replace(/[^\d+]/g, '').replace(/^\+?/, '+')}`}>
+                {env.PHONE}
+              </TypographyLink>
+            )}
             <TypographyLink icon={Email} href={`mailto:${env.EMAIL}`}>
               {env.EMAIL}
             </TypographyLink>
-            <TypographyLink icon={Public} href="https://www.m-tartari.eu">
-              www.m-tartari.eu
+            <TypographyLink icon={Public} href="https://www.compagniadarmedelsantoluca.it/">
+              www.compagniadarmedelsantoluca.it
             </TypographyLink>
-            <TypographyLink icon={LinkedIn} href={`https://www.linkedin.com/in/${env.LINKEDIN}/`}>
-              {env.LINKEDIN}
+            <TypographyLink icon={Facebook} href={`https://facebook.com/${env.FACEBOOK}/`}>
+              @{env.FACEBOOK}
+            </TypographyLink>
+            <TypographyLink icon={Instagram} href={`https://www.instagram.com/${env.INSTAGRAM}/`}>
+              @{env.INSTAGRAM}
             </TypographyLink>
           </Stack>
         </BusinessCard>

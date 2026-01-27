@@ -5,8 +5,8 @@ ARG BASE_IMAGE=node:lts
 FROM $BASE_IMAGE AS development
 
 ENV NODE_ENV=development
-COPY --chown=1000:1000 . /workspaces/m-tartari.github.io
-WORKDIR /workspaces/m-tartari.github.io
+COPY --chown=1000:1000 . /workspaces/website
+WORKDIR /workspaces/website
 USER 1000:1000
 
 CMD [ "sleep", "infinity" ]

@@ -12,7 +12,7 @@ vi.mock('./envVars.js', () => ({
   VAT: 'Test VAT',
   PHONE: '+123456789',
   EMAIL: 'test@example.com',
-  LINKEDIN: 'testlinkedin',
+  FACEBOOK: 'testfacebook',
 }))
 
 // Mock window.print
@@ -59,7 +59,7 @@ describe('BusinessCardPage', () => {
     const websiteLink = screen.getByText('www.m-tartari.eu').closest('a')
     expect(websiteLink).toHaveAttribute('href', 'https://www.m-tartari.eu')
 
-    // Check LinkedIn link
+    // Check Facebook Link
     const linkedinLink = screen.getByText('testlinkedin').closest('a')
     expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/testlinkedin/')
   })

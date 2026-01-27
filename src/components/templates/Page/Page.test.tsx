@@ -27,7 +27,7 @@ describe('Page component', () => {
     expect(screen.getByText('Test Content')).toBeInTheDocument()
 
     // sets the document title correctly
-    expect(document.title).toBe(`Michele Tartari - ${defaultProps.title}`)
+    expect(document.title).toBe(`Compagnia d'Arme del Santo Luca - ${defaultProps.title}`)
   })
 
   it('does not render the title and divider when title is not provided', () => {

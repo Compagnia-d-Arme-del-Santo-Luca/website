@@ -1,7 +1,7 @@
 {
   "short_name": "m-tartari",
-  "name": "Michele Tartari",
-  "version": "1.3.0",
+  "name": "Compagnia d'Arme del Santo Luca",
+  "version": "1.0.0",
   "description": "Robotics/Full Stack Software Engineer",
   "icons": [
     {
@@ -19,6 +19,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1b1d27",
-  "background_color": "#1b1d27"
+  "theme_color": "#1b271d",
+  "background_color": "#1b271d"
 }

@@ -49,8 +49,8 @@ jobs:
           if [[ -n "${{ vars.VITE_BC_VAT }}" ]]; then
             echo "VITE_BC_VAT=${{ vars.VITE_BC_VAT }}" >> .env
           fi
-          if [[ -n "${{ vars.VITE_BC_LINKEDIN }}" ]]; then
-            echo "VITE_BC_LINKEDIN=${{ vars.VITE_BC_LINKEDIN }}" >> .env
+          if [[ -n "${{ vars.VITE_BC_FACEBOOK }}" ]]; then
+            echo "VITE_BC_FACEBOOK=${{ vars.VITE_BC_FACEBOOK }}" >> .env
           fi
           if [[ -n "${{ secrets.VITE_BC_PHONE }}" ]]; then
             echo "VITE_BC_PHONE=${{ secrets.VITE_BC_PHONE }}" >> .env
