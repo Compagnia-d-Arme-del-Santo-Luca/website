@@ -6,6 +6,7 @@ import RootLayout from 'components/templates/RouteTracker/index.js'
 import Loading from 'components/molecules/LoadingScreen/index.js'
 
 const MainPage = React.lazy(() => import('components/pages/MainPage/index.js'))
+const PeoplePage = React.lazy(() => import('components/pages/PeoplePage/index.js'))
 const ContactPage = React.lazy(() => import('components/pages/ContactPage/index.js'))
 const PrivacyPage = React.lazy(() => import('components/pages/PrivacyPage/index.js'))
 const BusinessCardPage = React.lazy(() => import('components/pages/BusinessCardPage/index.js'))
@@ -21,6 +22,14 @@ const router = createBrowserRouter([
         element: (
           <React.Suspense fallback={<Loading />}>
             <MainPage />
+          </React.Suspense>
+        ),
+      },
+      {
+        path: 'people',
+        element: (
+          <React.Suspense fallback={<Loading />}>
+            <PeoplePage />
           </React.Suspense>
         ),
       },

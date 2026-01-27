@@ -1,4 +1,4 @@
-import { Email, LinkedIn, GitHub, Description, OndemandVideo, School, OpenInNew, OpenInBrowser } from '@mui/icons-material'
+import { Description, Email, Facebook, Instagram, OndemandVideo, School, OpenInNew, OpenInBrowser } from '@mui/icons-material'
 import { Badge, Link, LinkProps, SvgIcon } from '@mui/material'
 
 interface IconLinkProps extends LinkProps {
@@ -55,8 +55,8 @@ const IconWrapper: React.FC<IconWrapperProps> = ({ index, fontSize, Icon, sx, ..
 
 export const DescriptionIconLink = (props: IconLinkProps) => <IconWrapper aria-label="Doc-button" Icon={Description} {...props} />
 export const EmailIconLink = (props: IconLinkProps) => <IconWrapper aria-label="Email-button" Icon={Email} {...props} />
-export const GitHubIconLink = (props: IconLinkProps) => <IconWrapper aria-label="GitHub-button" Icon={GitHub} {...props} />
-export const LinkedInIconLink = (props: IconLinkProps) => <IconWrapper aria-label="LinkedIn-button" Icon={LinkedIn} {...props} />
+export const InstagramIconLink = (props: IconLinkProps) => <IconWrapper aria-label="Instagram-button" Icon={Instagram} {...props} />
+export const FacebookIconLink = (props: IconLinkProps) => <IconWrapper aria-label="LinkedIn-button" Icon={Facebook} {...props} />
 export const AcademyIconLink = (props: IconLinkProps) => <IconWrapper aria-label="Academy-button" Icon={School} {...props} />
 export const VideoIconLink = (props: IconLinkProps) => <IconWrapper aria-label="Video-button" Icon={OndemandVideo} {...props} />
 export const ExternalIconLink = (props: IconLinkProps) => <IconWrapper aria-label="External-link-button" Icon={OpenInNew} {...props} />
