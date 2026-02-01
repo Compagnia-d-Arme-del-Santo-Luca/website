@@ -5,13 +5,12 @@ import PolicyIcon from '@mui/icons-material/Policy'
 import CookieIcon from '@mui/icons-material/Cookie'
 
 import { EmailIconLink, InstagramIconLink, FacebookIconLink } from 'components/atoms/IconLinks/index.js'
-import CookieConsent from 'components/molecules/CookieConsent/index.js'
 
 type FooterProps = {
   showCookieConsent?: boolean
 }
 
-const Footer: React.FC<FooterProps> = ({ showCookieConsent = true }) => {
+const Footer: React.FC<FooterProps> = () => {
   const year = new Date().getFullYear()
   return (
     <Box
@@ -60,8 +59,6 @@ const Footer: React.FC<FooterProps> = ({ showCookieConsent = true }) => {
           m-tartari
         </Link>
       </Typography>
-
-      {showCookieConsent && <CookieConsent />}
     </Box>
   )
 }

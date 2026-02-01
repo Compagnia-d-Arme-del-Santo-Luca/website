@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { useAnalytics } from 'use-analytics'
 import { Outlet, useLocation } from 'react-router-dom'
 
 /**
@@ -7,11 +6,6 @@ import { Outlet, useLocation } from 'react-router-dom'
  */
 const RouteTracker = () => {
   const location = useLocation()
-  const analytics = useAnalytics()
-
-  useEffect(() => {
-    analytics.page()
-  }, [analytics, location])
 
   useEffect(() => {
     window.scrollTo(0, 0)

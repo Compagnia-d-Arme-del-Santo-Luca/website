@@ -19,91 +19,75 @@ const PrivacyPolicy: React.FC = () => {
         Privacy Policy
       </SectionHeader>
       <Typography variant="subtitle1" color="textSecondary" component="p" pb={4}>
-        Last updated: May 27, 2025
+        Data ultimo aggiornamento: Feb. 1, 2026
       </Typography>
 
       <SectionSubheader>Introduction</SectionSubheader>
       <Typography component="p" color="textSecondary">
-        Compagnia d'Arme del Santo Luca ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This privacy
-        policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how
-        the law protects you.
+        L'informativa è resa solo per il sito web ufficiale di la Compagnia d'Arme del Santo Luca all'indirizzo https://{window.location.host} e non
+        per altri siti web esterni, eventualmente consultati dall'utente tramite link.
       </Typography>
 
-      <SectionSubheader sx={{ mt: 4 }}>The Data We Collect About You</SectionSubheader>
+      <SectionSubheader sx={{ mt: 4 }}>Titolare del trattamento</SectionSubheader>
       <Typography component="p" color="textSecondary">
-        We collect and process the following information when you visit our website:
+        Il Titolare del trattamento è la Compagnia d'Arme del Santo Luca, con sede legale in via Leonello Poletti n. 16, 44122 Ferrara.
+      </Typography>
+
+      <SectionSubheader sx={{ mt: 4 }}> Responsabile Protezione Dati (DPO)</SectionSubheader>
+      <Typography component="p" color="textSecondary">
+        Il Titolare, la Compagnia d'Arme del Santo Luca, ai sensi dell'art. 37 GDPR, non è tenuto a nominare il Responsabile della protezione dei
+        dati.
+      </Typography>
+
+      <SectionSubheader sx={{ mt: 4 }}>Tipi di dati trattati (Dati di navigazione)</SectionSubheader>
+      <Typography component="p" color="textSecondary" gutterBottom>
+        I sistemi informatici e le procedure software preposte al funzionamento di questo sito web acquisiscono, nel corso del loro normale esercizio,
+        alcuni dati personali la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet. Si tratta di informazioni che non
+        sono raccolte per essere associate a interessati identificati, ma che per loro stessa natura potrebbero, attraverso elaborazioni ed
+        associazioni con dati detenuti da terzi, permettere di identificare gli utenti. In questa categoria di dati rientrano gli indirizzi IP o i
+        nomi a dominio dei computer utilizzati dagli utenti che si connettono al sito, gli indirizzi in notazione URI (Uniform Resource Identifier)
+        delle risorse richieste, l'orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto
+        in risposta, il codice numerico indicante lo stato della risposta data dal server (buon fine, errore, ecc.) ed altri parametri relativi al
+        sistema operativo e all'ambiente informatico dell'utente.
+      </Typography>
+      <Typography component="p" color="textSecondary">
+        I suddetti dati sono necessari per la fruizione della navigazione del sito. Questi dati vengono conservati dal provider per il tempo
+        strettamente necessario. I dati potrebbero essere utilizzati per l'accertamento di responsabilità in caso di ipotetici reati informatici ai
+        danni del sito.
+      </Typography>
+
+      <SectionSubheader sx={{ mt: 4 }}>Modalità del trattamento</SectionSubheader>
+      <Typography component="p" color="textSecondary">
+        I dati personali di navigazione sono trattati con strumenti automatizzati per il tempo strettamente necessario a conseguire gli scopi per cui
+        sono stati raccolti. I dati personali di contatto sono trattati con strumenti cartacei e informatici e vengono conservati fino a completa
+        esecuzione del rapporto precontrattuale e di quello contrattuale o per quanto necessario secondo termini di legge. Specifiche misure di
+        sicurezza sono osservate per prevenire la perdita dei dati, usi illeciti o non corretti ed accessi non autorizzati.
+      </Typography>
+
+      <SectionSubheader sx={{ mt: 4 }}>Diritti di accesso e reclamo</SectionSubheader>
+      <Typography component="p" color="textSecondary">
+        Scrivendo attraverso il modulo di contatto le è garantito il diritto di:
       </Typography>
       <List dense>
-        <ListItemText title="Technical Data">
-          includes internet protocol (IP) address, browser type and version, time zone setting and location, browser plug-in types and versions,
-          operating system and platform, and other technology on the devices you use to access this website.
+        <ListItemText>chiedere l'esistenza e l'accesso ai dati che la riguardano;</ListItemText>
+        <ListItemText>chiedere l'aggiornamento e l'integrazione dei dati forniti;</ListItemText>
+        <ListItemText>
+          chiedere la cancellazione dei dati personali, salva l'esistenza di un diritto del Titolare alla conservazione degli stessi
         </ListItemText>
-        <ListItemText title="Usage Data"> includes information about how you use our website, products, and services.</ListItemText>
-      </List>
-
-      <SectionSubheader sx={{ mt: 4 }}>Cookies</SectionSubheader>
-      <Typography component="p" color="textSecondary">
-        We use cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our
-        website and also allows us to improve our site.
-      </Typography>
-      <Typography component="p" color="textSecondary">
-        We use the following types of cookies:
-      </Typography>
-      <List dense>
-        <ListItemText title="Necessary Cookies:">
-          These are essential to enable you to use the website and its features. Without these cookies, services you have asked for cannot be
-          provided.
+        <ListItemText>
+          chiedere la comunicazione dei dati personali conservati eventualmente dal Titolare o la consegna di una loro copia;
         </ListItemText>
-        <ListItemText title="Analytics Cookies:">
-          We use Google Analytics to help us understand how visitors interact with our website. These cookies collect information about your visit to
-          our website, the content you viewed, the links you followed, and information about your browser, device, and IP address. We do this to
-          improve how our website works.
+        <ListItemText>opporsi ad operazioni di trattamento che ritenga non siano legittime o chiedere limitazioni di trattamento</ListItemText>
+        <ListItemText>
+          Per l'esercizio dei suddetti diritti la legittimità della sua richiesta potrà essere valutata previa verifica della sua identità.
         </ListItemText>
       </List>
 
-      <SectionSubheader sx={{ mt: 4 }}>Google Analytics</SectionSubheader>
       <Typography component="p" color="textSecondary">
-        This website uses Google Analytics 4, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses cookies to help the
-        website analyze how users use the site. The information generated by the cookie about your use of the website will be transmitted to and
-        stored by Google on servers in the United States.
-      </Typography>
-      <Typography component="p" color="textSecondary">
-        We have implemented the following measures to be GDPR compliant:
-      </Typography>
-      <List dense>
-        <ListItemText>We have obtained your consent before processing your data through cookies</ListItemText>
-        <ListItemText>We have implemented IP address anonymization</ListItemText>
-        <ListItemText>We have disabled data sharing with Google</ListItemText>
-        <ListItemText>We have set the data retention period to the minimum required for our analysis</ListItemText>
-      </List>
-      <Typography component="p" color="textSecondary">
-        You can prevent the collection of your data by Google Analytics by declining analytics cookies in our cookie consent banner or by using the
-        Google Analytics Opt-out Browser Add-on available at{' '}
-        <Link color="textPrimary" href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">
-          https://tools.google.com/dlpage/gaoptout
-        </Link>
-        .
-      </Typography>
-
-      <SectionSubheader sx={{ mt: 4 }}>Your Rights</SectionSubheader>
-      <Typography component="p" color="textSecondary">
-        Under the General Data Protection Regulation (GDPR), you have various rights in relation to your personal data, including:
-      </Typography>
-
-      <List dense>
-        <ListItemText>The right to access your personal data</ListItemText>
-        <ListItemText>The right to rectification of your personal data</ListItemText>
-        <ListItemText>The right to erasure of your personal data</ListItemText>
-        <ListItemText>The right to restrict processing of your personal data</ListItemText>
-        <ListItemText>The right to data portability</ListItemText>
-        <ListItemText>The right to object to processing of your personal data</ListItemText>
-      </List>
-
-      <SectionSubheader sx={{ mt: 4 }}>Contact Us</SectionSubheader>
-      <Typography component="p" color="textSecondary">
-        If you have any questions about this privacy policy or our privacy practices, please contact us at{' '}
-        <Link color="textPrimary" href="mailto:compagniasantoluca@gmail.com" target="_blank" rel="noopener noreferrer">
-          compagniasantoluca@gmail.com
+        Qualora ritenga che il trattamento abbia violato un suo diritto potrà presentare obiezioni nei confronti del Titolare utilizzando l'indirizzo
+        sopra indicato e anche presentando reclamo presso l'Autorità Garante{' '}
+        <Link color="textPrimary" href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">
+          www.garanteprivacy.it
         </Link>
         .
       </Typography>
