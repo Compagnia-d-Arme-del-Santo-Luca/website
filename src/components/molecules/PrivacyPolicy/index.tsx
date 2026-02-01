@@ -35,8 +35,8 @@ const PrivacyPolicy: React.FC = () => {
 
       <SectionSubheader sx={{ mt: 4 }}> Responsabile Protezione Dati (DPO)</SectionSubheader>
       <Typography component="p" color="textSecondary">
-        Il Titolare, la Compagnia d'Arme del Santo Luca, ai sensi dell'art. 37 GDPR, non è tenuto a nominare il Responsabile della protezione dei
-        dati.
+        Il Titolare, la Compagnia d'Arme del Santo Luca ente di diritto privato senza fine di lucro, ai sensi dell'art. 37 GDPR, non è tenuto a
+        nominare il Responsabile della protezione dei dati.
       </Typography>
 
       <SectionSubheader sx={{ mt: 4 }}>Tipi di dati trattati (Dati di navigazione)</SectionSubheader>
