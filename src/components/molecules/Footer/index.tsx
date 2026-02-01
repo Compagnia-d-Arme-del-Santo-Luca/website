@@ -54,6 +54,13 @@ const Footer: React.FC<FooterProps> = ({ showCookieConsent = true }) => {
         </Link>
       </Stack>
 
+      <Typography variant="subtitle2" align="center" color="text.secondary" component="em" mt={3}>
+        Sito realizzato da{' '}
+        <Link href="https://www.m-tartari.eu" color="inherit">
+          m-tartari
+        </Link>
+      </Typography>
+
       {showCookieConsent && <CookieConsent />}
     </Box>
   )
