@@ -27,7 +27,7 @@
     "@fontsource/unifrakturcook": "^5.2.8",
     "@mui/icons-material": "^7.3.7",
     "@mui/material": "^7.0.0",
-    "@vitejs/plugin-react-swc": "^4.2.2",
+    "@vitejs/plugin-react-swc": "^4.2.3",
     "analytics": "^0.8.19",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
