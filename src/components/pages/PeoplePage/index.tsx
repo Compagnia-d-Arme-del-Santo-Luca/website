@@ -15,7 +15,7 @@ const ProjectsPage = () => {
       <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
         <EmplyeeStack
           items={[
-            { name: 'Alberto V', image: 'images/people/albertoV.jpg', position: 'Marchese' },
+            { name: "Alberto V d'Este", image: 'images/people/albertoV.jpg', position: 'Marchese' },
             { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo.jpg', position: 'Nobile' },
             { name: 'Zan Biancolin', image: 'images/people/zanbiancolin.jpg', position: 'Popolano' },
           ]}
@@ -31,7 +31,9 @@ const ProjectsPage = () => {
         <EmplyeeCard name="Zanino il Beccaio" image="images/people/zannino_il_beccaio.jpg" position="Fante" />
         <EmplyeeCard name="Gamberino di Bergantino" image="images/people/gamberino_di_bergantino.jpg" position="Fante" />
         <EmplyeeCard name="Albertino della Muzzina" image="images/people/albertino_della_muzzina.jpg" position="Fante" />
+        <EmplyeeCard name="Benato Guerzi da Baura" image="images/people/benato_guerzi_da_baura.jpg" position="Fante" />
         <EmplyeeCard name="Ghisola Casale da Castrocaro" image="images/people/ghisola_da_castrocaro.jpg" position="Popolano" />
+        <EmplyeeCard name="Perina" image="images/people/perina.jpg" position="Popolano" />
       </Box>
     </Page>
   )
