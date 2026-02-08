@@ -206,7 +206,7 @@ const ProjectSpotlight = React.forwardRef<HTMLSelectElement, Props>((props, ref)
           })}>
           <Typography variant="h4">{props.title}</Typography>
           {props.caption}
-          <Typography pt={1}>{props.children}</Typography>
+          {props.children}
         </Box>
       </Box>
     </Box>
