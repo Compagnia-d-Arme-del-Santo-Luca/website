@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typography, Link, List as MuiList, styled, Box } from '@mui/material'
 
 import { ListItemText, SectionHeader, SectionSubheader } from 'components/atoms/index.js'
