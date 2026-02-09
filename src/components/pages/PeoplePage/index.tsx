@@ -16,7 +16,7 @@ const ProjectsPage = () => {
         <EmplyeeStack
           items={[
             // { name: "Alberto V d'Este", image: 'images/people/albertoV.jpg', position: 'Marchese' },
-            { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo_contrari.jpg.jpg', position: 'Nobile' },
+            { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo_contrari.jpg', position: 'Nobile' },
             { name: 'Zan Biancolin', image: 'images/people/zanbiancolin.jpg', position: 'Cuoco' },
           ]}
         />
