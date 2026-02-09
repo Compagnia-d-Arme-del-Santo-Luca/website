@@ -40,7 +40,7 @@ const MainPage = () => {
         {/*  2. Attività didattiche */}
         <ProjectSpotlight ref={refTeaching} scrollTarget={refTraining} anchor="left" image="images/didattica.png" title="Vita Civile">
           <Typography>
-            La ricostruzione della vita civile rappresenta un elemento fondamentale delle attività della Compagnia. Non rapprenetiamo solo soldati, ma
+            La ricostruzione della vita civile rappresenta un elemento fondamentale delle attività della Compagnia. Non rappresetiamo solo soldati, ma
             anche tutte le altre figure che vivevano e operavano al seguito di una compagnie d'arme: cuochi, artigiani, religiosi, pellegrini e
             personale di supporto, tutti riproposti attraverso abiti, strumenti e gesti quotidiani ricostruiti su base storica. Particolare attenzione
             è dedicata agli aspetti della vita materiale: la preparazione dei cibi, l'organizzazione del banchetto, la sartoria storica, le pratiche
