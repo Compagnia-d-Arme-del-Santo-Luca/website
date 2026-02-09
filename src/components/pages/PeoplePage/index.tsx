@@ -15,15 +15,15 @@ const ProjectsPage = () => {
       <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
         <EmplyeeStack
           items={[
-            { name: "Alberto V d'Este", image: 'images/people/albertoV.jpg', position: 'Marchese' },
-            { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo.jpg', position: 'Nobile' },
-            { name: 'Zan Biancolin', image: 'images/people/zanbiancolin.jpg', position: 'Popolano' },
+            // { name: "Alberto V d'Este", image: 'images/people/albertoV.jpg', position: 'Marchese' },
+            { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo_contrari.jpg.jpg', position: 'Nobile' },
+            { name: 'Zan Biancolin', image: 'images/people/zanbiancolin.jpg', position: 'Cuoco' },
           ]}
         />
         <EmplyeeStack
           items={[
             { name: 'Niccolò degli Obizzi', image: 'images/people/niccolo_degli_obizzi.jpg', position: 'Nobile' },
-            { name: 'Ferantino di Zampalocha', image: 'images/people/ferantino_di_zampalocha.jpg', position: 'Fante' },
+            { name: 'Ferantino di Zampalocha', image: 'images/people/ferantino_di_zampalocha.jpg', position: 'Serragente' },
           ]}
         />
 
@@ -32,8 +32,8 @@ const ProjectsPage = () => {
         <EmplyeeCard name="Gamberino di Bergantino" image="images/people/gamberino_di_bergantino.jpg" position="Fante" />
         <EmplyeeCard name="Albertino della Muzzina" image="images/people/albertino_della_muzzina.jpg" position="Fante" />
         <EmplyeeCard name="Benato Guerzi da Baura" image="images/people/benato_guerzi_da_baura.jpg" position="Fante" />
-        <EmplyeeCard name="Ghisola Casale da Castrocaro" image="images/people/ghisola_da_castrocaro.jpg" position="Popolano" />
-        <EmplyeeCard name="Perina" image="images/people/perina.jpg" position="Popolano" />
+        <EmplyeeCard name="Ghisola Casale da Castrocaro" image="images/people/ghisola_da_castrocaro.jpg" position="Cuoca" />
+        <EmplyeeCard name="Perina" image="images/people/perina.jpg" position="Moglie di Ferantino" />
       </Box>
     </Page>
   )
