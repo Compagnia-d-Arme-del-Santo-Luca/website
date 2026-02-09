@@ -48,7 +48,7 @@ const MainPage = () => {
           </Typography>
 
           <Typography variant="h4" pt={3}>
-            Attività didattiche
+            Attività Didattiche
           </Typography>
           <Typography pt={2}>
             La Compagnia propone percorsi didattici dedicati alla scoperta della vita nel Basso Medioevo, illustrando le attività svolte all'interno
@@ -57,7 +57,7 @@ const MainPage = () => {
           </Typography>
         </ProjectSpotlight>
         {/*  3. Scuola d'arme */}
-        <ProjectSpotlight ref={refTraining} anchor="bottom" image="images/battle.png" mobileImage="images/battle.png" title="Vita militare">
+        <ProjectSpotlight ref={refTraining} anchor="bottom" image="images/battle.png" mobileImage="images/battle.png" title="Vita Militare">
           <Typography pt={1}>
             La dimensione militare è il cuore operativo della Compagnia, che è in grado di allestire un campo d'arme del Basso Medioevo con tende
             storiche finemente arredate, armamenti e dotazioni coerenti con il periodo rievocato. All'interno del campo vengono mostrate le gerarchie,

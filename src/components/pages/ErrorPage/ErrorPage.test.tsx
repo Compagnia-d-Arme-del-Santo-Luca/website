@@ -1,14 +1,7 @@
 import { screen, render } from '@testing-library/react'
 import { RouterProvider, createMemoryRouter } from 'react-router-dom'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useAnalytics } from 'use-analytics'
 
 import ErrorPage from './index.js'
-
-// Mock the analytics module
-vi.mock('use-analytics', () => ({
-  useAnalytics: () => ({ plugins: { enable: vi.fn(), disable: vi.fn() } }),
-}))
 
 // Suppress console.error messages during tests
 const originalConsoleError = console.error

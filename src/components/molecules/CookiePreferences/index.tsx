@@ -11,7 +11,7 @@ const CookieConsent: React.FC<CookieConsentProps> = () => {
   return (
     <Box id="cookie-preferences" aria-labelledby="cookie-preferences-title" aria-describedby="cookie-preferences-description">
       <SectionHeader color="inherit" id="cookie-preferences-title" aria-label="cookie-preferences">
-        Cookie policy
+        Cookie Policy
       </SectionHeader>
 
       <Typography component="p" color="textSecondary">

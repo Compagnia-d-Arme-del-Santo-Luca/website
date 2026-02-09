@@ -1,6 +1,4 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useAnalytics } from 'use-analytics'
 
 import CookieConsent from './index.js'
 

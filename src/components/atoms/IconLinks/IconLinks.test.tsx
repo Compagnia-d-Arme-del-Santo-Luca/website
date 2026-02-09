@@ -7,8 +7,8 @@ import * as IconLinks from './index.js'
 const labels: { [key: string]: string } = {
   DescriptionIconLink: 'Doc-button',
   EmailIconLink: 'Email-button',
-  GitHubIconLink: 'GitHub-button',
-  LinkedInIconLink: 'LinkedIn-button',
+  InstagramIconLink: 'Instagram-button',
+  FacebookIconLink: 'Facebook-button',
   AcademyIconLink: 'Academy-button',
   VideoIconLink: 'Video-button',
   ExternalIconLink: 'External-link-button',

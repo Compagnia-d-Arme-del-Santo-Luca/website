@@ -1,7 +1,5 @@
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useAnalytics } from 'use-analytics'
 
 import { renderWithRouter as render } from 'components/utils/tests/index.js'
 import BusinessCardPage from './index.js'
@@ -13,16 +11,12 @@ vi.mock('./envVars.js', () => ({
   PHONE: '+123456789',
   EMAIL: 'test@example.com',
   FACEBOOK: 'testfacebook',
+  INSTAGRAM: 'testinstagram',
 }))
 
 // Mock window.print
 const mockPrint = vi.fn()
 window.print = mockPrint
-
-// Mock the analytics module
-vi.mock('use-analytics', () => ({
-  useAnalytics: () => ({ plugins: { enable: vi.fn(), disable: vi.fn() } }),
-}))
 
 describe('BusinessCardPage', () => {
   beforeEach(() => {
@@ -33,15 +27,15 @@ describe('BusinessCardPage', () => {
     render(<BusinessCardPage />)
 
     // Name appears in uppercase in the first card
-    expect(screen.getAllByText('Test Name')).toHaveLength(2)
+    expect(screen.getByText('Test Name')).toBeInTheDocument()
     expect(screen.getByText('Test Position')).toBeInTheDocument()
 
     // Check if values are rendered correctly in the second card
-    expect(screen.getByText('Test VAT')).toBeInTheDocument()
     expect(screen.getByText('+123456789')).toBeInTheDocument()
     expect(screen.getByText('test@example.com')).toBeInTheDocument()
-    expect(screen.getByText('www.m-tartari.eu')).toBeInTheDocument()
-    expect(screen.getByText('testlinkedin')).toBeInTheDocument()
+    expect(screen.getByText('www.compagniadarmedelsantoluca.it')).toBeInTheDocument()
+    expect(screen.getByText('@testinstagram')).toBeInTheDocument()
+    expect(screen.getByText('@testfacebook')).toBeInTheDocument()
   })
 
   it('has correct links with proper href attributes', () => {
@@ -56,12 +50,12 @@ describe('BusinessCardPage', () => {
     expect(emailLink).toHaveAttribute('href', 'mailto:test@example.com')
 
     // Check website link
-    const websiteLink = screen.getByText('www.m-tartari.eu').closest('a')
-    expect(websiteLink).toHaveAttribute('href', 'https://www.m-tartari.eu')
+    const websiteLink = screen.getByText('www.compagniadarmedelsantoluca.it').closest('a')
+    expect(websiteLink).toHaveAttribute('href', 'https://www.compagniadarmedelsantoluca.it/')
 
     // Check Facebook Link
-    const linkedinLink = screen.getByText('testlinkedin').closest('a')
-    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/testlinkedin/')
+    const linkedinLink = screen.getByText('@testfacebook').closest('a')
+    expect(linkedinLink).toHaveAttribute('href', 'https://facebook.com/testfacebook/')
   })
 
   it('calls window.print when print button is clicked', async () => {

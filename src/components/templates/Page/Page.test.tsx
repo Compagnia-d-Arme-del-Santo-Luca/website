@@ -1,14 +1,7 @@
 import { screen } from '@testing-library/react'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useAnalytics } from 'use-analytics'
 
 import { renderWithRouter as render } from 'components/utils/tests/index.js'
-import Page from '.'
-
-// Mock the analytics module
-vi.mock('use-analytics', () => ({
-  useAnalytics: () => ({ plugins: { enable: vi.fn(), disable: vi.fn() } }),
-}))
+import Page from './index.js'
 
 describe('Page component', () => {
   const defaultProps = {
