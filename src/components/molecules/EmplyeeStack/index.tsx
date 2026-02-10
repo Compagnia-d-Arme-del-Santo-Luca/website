@@ -28,6 +28,9 @@ const EmplyeeStack: FC<Props> = ({
     }
   }
 
+  if (items.length === 0) return null
+  if (items.length === 1) return <EmplyeeCard {...items[0]} />
+
   return (
     <Box
       onClick={handleTopClick}
