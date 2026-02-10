@@ -8,7 +8,7 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'm-tartari/m-tartari'
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'Compagnia-d-Arme-del-Santo-Luca/website'
     steps:
       - name: Dependabot metadata
         id: metadata
