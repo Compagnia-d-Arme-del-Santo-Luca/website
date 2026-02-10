@@ -1,10 +1,13 @@
 import { FC, useEffect, useState } from 'react'
 import { Box, IconButton } from '@mui/material'
-import { EmplyeeCard, EmplyeeCardProps } from 'components/molecules/EmplyeeCard/index.js'
 import ShuffleIcon from '@mui/icons-material/NextPlan'
 
+import { EmplyeeCard, EmployeeCardProps } from 'components/molecules/EmplyeeCard/index.js'
+import { EmployeeDescription } from 'components/molecules/EmployeeDescription/index.js'
+
 interface Props {
-  items: EmplyeeCardProps[]
+  items: EmployeeCardProps[]
+  onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>, description: EmployeeDescription) => void
 
   // Visual offsets
   offsetStep?: number // px shift per card
@@ -15,6 +18,7 @@ const EmplyeeStack: FC<Props> = ({
   offsetStep = 10, // px shift per card
   maxVisible = 6, // how many cards we actually render (performance)
   items: initialItems,
+  onClick,
 }) => {
   const [items, setItems] = useState(initialItems)
 
@@ -29,7 +33,7 @@ const EmplyeeStack: FC<Props> = ({
   }
 
   if (items.length === 0) return null
-  if (items.length === 1) return <EmplyeeCard {...items[0]} />
+  if (items.length === 1) return <EmplyeeCard {...items[0]} onClick={onClick} />
 
   return (
     <Box
@@ -41,6 +45,7 @@ const EmplyeeStack: FC<Props> = ({
       {items.slice(0, maxVisible).map((props, idx) => (
         <EmplyeeCard
           {...props}
+          onClick={onClick}
           key={idx}
           sx={{
             position: 'absolute',
