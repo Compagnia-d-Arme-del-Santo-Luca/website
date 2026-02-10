@@ -1,7 +1,7 @@
-// src/components/StackedDeck.tsx
 import { FC, useEffect, useState } from 'react'
-import { Box } from '@mui/material'
+import { Box, IconButton } from '@mui/material'
 import { EmplyeeCard, EmplyeeCardProps } from 'components/molecules/EmplyeeCard/index.js'
+import ShuffleIcon from '@mui/icons-material/NextPlan'
 
 interface Props {
   items: EmplyeeCardProps[]
@@ -33,18 +33,16 @@ const EmplyeeStack: FC<Props> = ({
 
   return (
     <Box
-      onClick={handleTopClick}
       sx={{
         position: 'relative',
-        width: 270 + offsetStep * (initialItems.length - 1),
-        height: 360 + offsetStep * (initialItems.length - 1),
+        width: 270 + offsetStep * Math.min(initialItems.length - 1, maxVisible),
+        height: 360 + offsetStep * Math.min(initialItems.length - 1, maxVisible),
       }}>
       {items.slice(0, maxVisible).map((props, idx) => (
         <EmplyeeCard
           {...props}
           key={idx}
           sx={{
-            cursor: 'pointer',
             position: 'absolute',
             top: idx * offsetStep,
             left: idx * offsetStep,
@@ -52,6 +50,21 @@ const EmplyeeStack: FC<Props> = ({
           }}
         />
       ))}
+      <IconButton
+        onClick={handleTopClick}
+        sx={{
+          position: 'absolute',
+          color: 'text.primary',
+          backgroundColor: 'background.paper',
+          '&:hover': { backgroundColor: 'background.paper' },
+          padding: 0,
+          right: Math.min(initialItems.length - 2, maxVisible - 1) * offsetStep,
+          top: -offsetStep,
+          zIndex: initialItems.length + 1,
+          rotate: '30deg',
+        }}>
+        <ShuffleIcon fontSize="large" />
+      </IconButton>
     </Box>
   )
 }
