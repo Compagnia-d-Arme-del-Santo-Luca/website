@@ -40,16 +40,25 @@ const people: EmployeeCardProps[][] = [
       name: 'Niccolò degli Obizzi',
       image: 'images/people/niccolo_degli_obizzi/avatar.jpg',
       position: 'Nobile',
-    },
-    {
-      name: 'Ferantino di Zampalocha',
-      image: 'images/people/ferantino_di_zampalocha/avatar.jpg',
-      position: 'Serragente',
       description: {
         body: [
           'Figlio di Giovanni degli Obizzi.',
           "Comandante delle truppe del marchese Niccolò d'Este. Si distinse con il marchese nell'assedio di Reggio Emilia dove stava rinchiuso Ottobone Terzi, signore di Parma, principale istigatore della rivolta contro gli Estensi.In quella occasione diede a conoscere il suo coraggio e il valore del suo casato.",
           "Accompagna Niccolò d'Este nei vari pellegrinaggi come Roma, Terra Santa e Santiago di Compostela. Nel faticoso pellegrinaggio in Terra Santa viene armato Cavaliere del Santo Sepolcro dallo stesso Marchese d'Este. In una tappa del pellegrinaggio a Santiago di Compostela viene armato Cavaliere anche dal Re di Francia.",
+        ],
+      },
+    },
+    {
+      name: 'Ferantino',
+      image: 'images/people/ferantino_di_zampalocha/avatar.jpg',
+      position: 'Serragente',
+      description: {
+        body: [
+          "Ferantino compare in un documento notarile redatto nell'agosto del 1371, con li quale la vedova di Francolino speziale, Beatrice, si trova in evidente difficoltà a soddisfare i creditori del defunto marito; a nome di due dei tre figli, nominati eredi universali, decide di alienare parte delle proprietà per ottenere la liquidità necessaria. Ne consegna una prima tranche a Ferantino di Ostellato, che le corrisponde il prezzo di 603 lire e 8 soldi di bolognini.",
+        ],
+        captions: [
+          'SUPERBI, Silvia. In dotem pro dote et dotis nomine. Il sistema dotale tra norma e prassi nella Ferrara del XIV secolo. 2012.',
+          'ASFe, A.N.A., matr. 13, not. Nicolò Sansilvestri, atti del 9 agosto 1371.',
         ],
       },
     },
