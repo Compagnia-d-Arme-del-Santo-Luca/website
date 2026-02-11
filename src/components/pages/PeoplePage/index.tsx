@@ -10,8 +10,29 @@ const people: EmployeeCardProps[][] = [
   // Bartolomeo Contrari e Zan Biancolin
   [
     // { name: "Alberto V d'Este", image: 'images/people/albertoV/avatar.jpg', position: 'Marchese' },
-    { name: 'Bartolomeo Contrari', image: 'images/people/bartolomeo_contrari/avatar.jpg', position: 'Nobile' },
-    { name: 'Zan Biancolin', image: 'images/people/zan_biancolin/avatar.jpg', position: 'Cuoco' },
+    {
+      name: 'Bartolomeo Contrari',
+      image: 'images/people/bartolomeo_contrari/avatar.jpg',
+      position: 'Nobile',
+      description: {
+        body: [
+          'Detto Boitus compare in un documento dotale per la figlia Agnese con il quale consegna a Turcolino Tramaione 10 lire di veneti grossi ed una casa in contrada San Paolo il cui valore è stato stimato 100 lire bolognesi.',
+          'Un documento dimostra che si trova fuori città: si era recato a Bologna pro negociis domini marchionis.Era evidentemente molto vicino alla famiglia Estensi.',
+        ],
+        captions: ['SUPERBI, Silvia. In dotem pro dote et dotis nomine. Il sistema dotale tra norma e prassi nella Ferrara del XIV secolo. 2012.'],
+      },
+    },
+    {
+      name: 'Zan Biancolin',
+      image: 'images/people/zan_biancolin/avatar.jpg',
+      position: 'Cuoco',
+      description: {
+        body: ['Caxarolus, lardarolo. Era un venditore di formaggio e lardo.'],
+        captions: [
+          "SANFILIPPO, Carla M. L'onomastica ferrarese del primo Trecento e gli Instrumenta fidelitatis.Libreriauniversitaria.it edizioni, 2016.",
+        ],
+      },
+    },
   ],
   // Niccolò degli Obizzi e Ferantino di Zampalocha
   [
@@ -20,7 +41,18 @@ const people: EmployeeCardProps[][] = [
       image: 'images/people/niccolo_degli_obizzi/avatar.jpg',
       position: 'Nobile',
     },
-    { name: 'Ferantino di Zampalocha', image: 'images/people/ferantino_di_zampalocha/avatar.jpg', position: 'Serragente' },
+    {
+      name: 'Ferantino di Zampalocha',
+      image: 'images/people/ferantino_di_zampalocha/avatar.jpg',
+      position: 'Serragente',
+      description: {
+        body: [
+          'Figlio di Giovanni degli Obizzi.',
+          "Comandante delle truppe del marchese Niccolò d'Este. Si distinse con il marchese nell'assedio di Reggio Emilia dove stava rinchiuso Ottobone Terzi, signore di Parma, principale istigatore della rivolta contro gli Estensi.In quella occasione diede a conoscere il suo coraggio e il valore del suo casato.",
+          "Accompagna Niccolò d'Este nei vari pellegrinaggi come Roma, Terra Santa e Santiago di Compostela. Nel faticoso pellegrinaggio in Terra Santa viene armato Cavaliere del Santo Sepolcro dallo stesso Marchese d'Este. In una tappa del pellegrinaggio a Santiago di Compostela viene armato Cavaliere anche dal Re di Francia.",
+        ],
+      },
+    },
   ],
   // Galacino Galaci
   [
@@ -120,7 +152,21 @@ const people: EmployeeCardProps[][] = [
     },
   ],
   // Ghisola Casale da Castrocaro
-  [{ name: 'Ghisola Casale da Castrocaro', image: 'images/people/ghisola_da_castrocaro/avatar.jpg', position: 'Cuoca' }],
+  [
+    {
+      name: 'Ghisola Casale da Castrocaro',
+      image: 'images/people/ghisola_da_castrocaro/avatar.jpg',
+      position: 'Cuoca',
+      description: {
+        body: [
+          'Figlia di un frate di un villaggio vicino a Castrocaro, vedova di Menguccio di Casale. Ha due figli, Betta ormai in età da marito e Biagio.',
+          "Ereditano una casa, un pezzo di terra coltivata a vigna di quindici pertiche, un pezzo di terra di quattro tornature, una di tre tornature e altri tre appezzamenti di terra rispettivamente di tre, di una e di mezza tornatura, più due pecore, due agnelli e un'asina.",
+          'Ghisola, vedova, doveva tutelare gli interessi del figlio minore e si doveva occupare del destino di Betta alla quale volle assegnare una dote. Fu destinata una piccola cassa con piccoli oggetti di un corredo del valore di 12 lire e un pezzo di terra.',
+        ],
+        captions: ['MUZZARELLI, Maria Giuseppina. Guardaroba medievale : vesti e società dal XIII al XVI secolo. 1999.'],
+      },
+    },
+  ],
   // Perina
   [
     {
