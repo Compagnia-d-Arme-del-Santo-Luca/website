@@ -9,7 +9,7 @@ describe('PeoplePage component', () => {
     render(<ProjectsPage />)
 
     // check the section titles
-    expect(screen.getByText('Ferantino di Zampalocha')).toBeInTheDocument()
+    expect(screen.getByText('Ferantino')).toBeInTheDocument()
     expect(screen.getByText('Galacino Galaci')).toBeInTheDocument()
   })
 })

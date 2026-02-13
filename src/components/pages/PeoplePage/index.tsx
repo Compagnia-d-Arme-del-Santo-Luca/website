@@ -34,7 +34,7 @@ const people: EmployeeCardProps[][] = [
       },
     },
   ],
-  // Niccolò degli Obizzi e Ferantino di Zampalocha
+  // Niccolò degli Obizzi e Ferantino
   [
     {
       name: 'Niccolò degli Obizzi',
@@ -50,7 +50,7 @@ const people: EmployeeCardProps[][] = [
     },
     {
       name: 'Ferantino',
-      image: 'images/people/ferantino_di_zampalocha/avatar.jpg',
+      image: 'images/people/ferantino/avatar.jpg',
       position: 'Serragente',
       description: {
         body: [
