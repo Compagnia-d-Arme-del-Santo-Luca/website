@@ -35,7 +35,7 @@ const EmployeeDescriptionDialog: React.FC<EmployeeDescriptionDialogProps> = ({ d
       }}>
       <CloseIcon />
     </IconButton>
-    <DialogContent sx={{ pt: 0 }}>
+    <DialogContent sx={{ pt: 0, mb: 3, pb: 0 }}>
       <img
         srcSet={description.image}
         src={description.image}
