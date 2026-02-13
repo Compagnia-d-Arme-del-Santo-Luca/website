@@ -17,7 +17,7 @@ const people: EmployeeCardProps[][] = [
       description: {
         body: [
           'Detto Boitus compare in un documento dotale per la figlia Agnese con il quale consegna a Turcolino Tramaione 10 lire di veneti grossi ed una casa in contrada San Paolo il cui valore è stato stimato 100 lire bolognesi.',
-          'Un documento dimostra che si trova fuori città: si era recato a Bologna pro negociis domini marchionis.Era evidentemente molto vicino alla famiglia Estensi.',
+          'Un documento dimostra che si trova fuori città: si era recato a Bologna pro negociis domini marchionis. Era evidentemente molto vicino alla famiglia Estensi.',
         ],
         captions: ['SUPERBI, Silvia. In dotem pro dote et dotis nomine. Il sistema dotale tra norma e prassi nella Ferrara del XIV secolo. 2012.'],
       },
@@ -29,7 +29,7 @@ const people: EmployeeCardProps[][] = [
       description: {
         body: ['Caxarolus, lardarolo. Era un venditore di formaggio e lardo.'],
         captions: [
-          "SANFILIPPO, Carla M. L'onomastica ferrarese del primo Trecento e gli Instrumenta fidelitatis.Libreriauniversitaria.it edizioni, 2016.",
+          "SANFILIPPO, Carla M. L'onomastica ferrarese del primo Trecento e gli Instrumenta fidelitatis. Libreriauniversitaria.it edizioni, 2016.",
         ],
       },
     },
@@ -43,7 +43,7 @@ const people: EmployeeCardProps[][] = [
       description: {
         body: [
           'Figlio di Giovanni degli Obizzi.',
-          "Comandante delle truppe del marchese Niccolò d'Este. Si distinse con il marchese nell'assedio di Reggio Emilia dove stava rinchiuso Ottobone Terzi, signore di Parma, principale istigatore della rivolta contro gli Estensi.In quella occasione diede a conoscere il suo coraggio e il valore del suo casato.",
+          "Comandante delle truppe del marchese Niccolò d'Este. Si distinse con il marchese nell'assedio di Reggio Emilia dove stava rinchiuso Ottobone Terzi, signore di Parma, principale istigatore della rivolta contro gli Estensi. In quella occasione diede a conoscere il suo coraggio e il valore del suo casato.",
           "Accompagna Niccolò d'Este nei vari pellegrinaggi come Roma, Terra Santa e Santiago di Compostela. Nel faticoso pellegrinaggio in Terra Santa viene armato Cavaliere del Santo Sepolcro dallo stesso Marchese d'Este. In una tappa del pellegrinaggio a Santiago di Compostela viene armato Cavaliere anche dal Re di Francia.",
         ],
       },
@@ -108,8 +108,8 @@ const people: EmployeeCardProps[][] = [
       position: 'Fante',
       description: {
         body: [
-          'Le tracce relative a Gamberino di Bergantino emergono indirettamente dal testamento di Benvenuto Azzi, castaldo del marchese a Bergantino.Tra i legati figura la donazione a Martina di sex bonas pecudes, lascito di entità modesta che acquista tuttavia rilievo alla luce di alcuni elementi contestuali.Martina è infatti indicata come olim sua serva, e si può supporre che avesse già ricevuto quanto dovuto per i servizi prestati.',
-          "Circa due mesi prima della redazione del testamento, Benvenuto aveva consegnato a Zilio, padre del futuro marito di Martina, Gamberino anch'egli di Bergantino, beni mobili per un valore complessivo di novantotto lire.Le sei pecore menzionate nel testamento appaiono dunque come un'aggiunta rispetto a quanto già corrisposto, interpretabile come un dono ulteriore.È inoltre significativo che, nel dettare le proprie volontà corpore languens, Benvenuto si riferisca inizialmente a Martina come “figlia”, correggendo poi il termine in famula: una correzione formale che non annulla il valore simbolico dell'espressione originaria.",
+          'Le tracce relative a Gamberino di Bergantino emergono indirettamente dal testamento di Benvenuto Azzi, castaldo del marchese a Bergantino. Tra i legati figura la donazione a Martina di sex bonas pecudes, lascito di entità modesta che acquista tuttavia rilievo alla luce di alcuni elementi contestuali. Martina è infatti indicata come olim sua serva, e si può supporre che avesse già ricevuto quanto dovuto per i servizi prestati.',
+          "Circa due mesi prima della redazione del testamento, Benvenuto aveva consegnato a Zilio, padre del futuro marito di Martina, Gamberino anch'egli di Bergantino, beni mobili per un valore complessivo di novantotto lire. Le sei pecore menzionate nel testamento appaiono dunque come un'aggiunta rispetto a quanto già corrisposto, interpretabile come un dono ulteriore. È inoltre significativo che, nel dettare le proprie volontà corpore languens, Benvenuto si riferisca inizialmente a Martina come “figlia”, correggendo poi il termine in famula: una correzione formale che non annulla il valore simbolico dell'espressione originaria.",
         ],
         captions: [
           'SUPERBI, Silvia. In dotem pro dote et dotis nomine. Il sistema dotale tra norma e prassi nella Ferrara del XIV secolo. 2012.',
