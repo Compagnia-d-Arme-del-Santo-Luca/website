@@ -44,9 +44,7 @@ const Description = (props: Props) => {
               <Typography variant="h4">{props.title}</Typography>
               {props.caption}
             </Grid>
-            <Grid component={Typography} size={8}>
-              {props.children}
-            </Grid>
+            <Grid size={8}>{props.children}</Grid>
           </Grid>
         </Box>
       )
@@ -73,9 +71,7 @@ const Description = (props: Props) => {
               <Typography variant="h4">{props.title}</Typography>
               {props.caption}
             </Grid>
-            <Grid component={Typography} size={8}>
-              {props.children}
-            </Grid>
+            <Grid size={8}>{props.children}</Grid>
           </Grid>
         </Box>
       )
@@ -98,7 +94,7 @@ const Description = (props: Props) => {
           })}>
           <Typography variant="h4">{props.title}</Typography>
           {props.caption}
-          <Typography mt={3}>{props.children}</Typography>
+          <Box mt={3}>{props.children}</Box>
         </Box>
       )
     case 'left':
@@ -118,9 +114,11 @@ const Description = (props: Props) => {
             p: `${theme.spacing(10)} ${theme.spacing(5)} ${theme.spacing(5)} ${theme.spacing(5)}`,
             // p: '5.1em 3.1em 3.1em 3.1em',
           })}>
-          <Typography variant="h4">{props.title}</Typography>
+          <Typography variant="h4" mb={3}>
+            {props.title}
+          </Typography>
           {props.caption}
-          <Typography mt={3}>{props.children}</Typography>
+          <Box mt={3}>{props.children}</Box>
         </Box>
       )
   }
