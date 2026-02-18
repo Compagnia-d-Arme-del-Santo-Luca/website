@@ -19,8 +19,7 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
       component="section"
       sx={{
         margin: 0,
-        padding: 0,
-        width: '100%',
+        px: { xs: 1, sm: 2, md: 0 },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -38,19 +37,23 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
             sx={[
               theme => ({
                 paddingBottom: 3,
-                [theme.breakpoints.up('md')]: {
-                  width: '90em',
+                [theme.breakpoints.only('md')]: {
+                  width: theme.breakpoints.values.md,
                   maxWidth: 'calc(100% - 2em)',
-                  mx: 'auto',
+                },
+                [theme.breakpoints.up('lg')]: {
+                  width: theme.breakpoints.values.lg,
                 },
               }),
               theme =>
                 theme.applyStyles('dark', {
                   paddingBottom: 3,
-                  [theme.breakpoints.up('md')]: {
-                    width: '90em',
+                  [theme.breakpoints.only('md')]: {
+                    width: theme.breakpoints.values.md,
                     maxWidth: 'calc(100% - 2em)',
-                    mx: 'auto',
+                  },
+                  [theme.breakpoints.up('lg')]: {
+                    width: theme.breakpoints.values.lg,
                   },
                 }),
             ]}>
@@ -63,10 +66,12 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
             color="text.secondary"
             sx={theme => ({
               paddingBottom: 3,
-              [theme.breakpoints.up('md')]: {
-                width: '90em',
+              [theme.breakpoints.only('md')]: {
+                width: theme.breakpoints.values.md,
                 maxWidth: 'calc(100% - 4em)',
-                mx: 'auto',
+              },
+              [theme.breakpoints.up('lg')]: {
+                width: theme.breakpoints.values.lg,
               },
             })}>
             {props.headline}
@@ -78,16 +83,22 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
             justifyContent: 'center',
 
             [theme.breakpoints.down('md')]: {
-              minHeight: '60vh',
+              // minHeight: imageUrl && '60vh',
               flexDirection: props.title || props.headline ? 'column' : 'column-reverse',
-              alignItems: 'align-items',
+              alignItems: 'center',
               gap: 3,
             },
-
-            [theme.breakpoints.up('md')]: {
+            [theme.breakpoints.only('md')]: {
               mx: 'auto',
-              width: '90em',
+              width: theme.breakpoints.values.md,
               maxWidth: 'calc(100% - 4em)',
+              flexDirection: variant === 'primary' ? 'row-reverse' : 'row',
+              alignItems: 'center',
+              gap: 5,
+            },
+            [theme.breakpoints.up('lg')]: {
+              mx: 'auto',
+              width: theme.breakpoints.values.lg,
               flexDirection: variant === 'primary' ? 'row-reverse' : 'row',
               alignItems: 'center',
               gap: 5,
