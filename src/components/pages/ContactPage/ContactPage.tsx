@@ -39,7 +39,13 @@ const ListItemLink: React.FC<ListItemProps> = ({ children, ...props }) => (
 
 const ContactPage = () => {
   return (
-    <Page title="Contatti">
+    <Page
+      title="Contatti"
+      sx={{
+        width: theme => theme.breakpoints.values.lg,
+        px: 'auto',
+        mx: 'auto',
+      }}>
       <Typography align="left" variant="h6">
         Sentiti libero di contattatarci con uno qualsiasi dei seguenti:
       </Typography>
