@@ -25,7 +25,7 @@
     "@fontsource/eb-garamond": "^5.2.7",
     "@fontsource/medievalsharp": "^5.2.8",
     "@fontsource/unifrakturcook": "^5.2.8",
-    "@mui/icons-material": "^7.3.8",
+    "@mui/icons-material": "^7.3.9",
     "@mui/material": "^7.0.0",
     "@vitejs/plugin-react-swc": "^4.2.3",
     "analytics": "^0.8.19",
