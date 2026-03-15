@@ -91,6 +91,11 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
             <ListItemText primary="Home" />
           </DrawerButton>
         </ListItem>
+        <ListItem key="Attività" disablePadding>
+          <DrawerButton component={RouterLink} to="/activities">
+            <ListItemText primary="Attività" />
+          </DrawerButton>
+        </ListItem>
         <ListItem key="Personaggi" disablePadding>
           <DrawerButton component={RouterLink} to="/people">
             <ListItemText primary="Personaggi" />
@@ -159,6 +164,7 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
           </AppBarLink>
           <Stack component="div" direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
             <AppBarLink to="/">Home</AppBarLink>
+            <AppBarLink to="/activities">Attività</AppBarLink>
             <AppBarLink to="/people">Personaggi</AppBarLink>
             <Button component={RouterLink} to="/contacts" color="primary" variant="contained" sx={{ textTransform: 'none' }}>
               <Typography variant="h6">Contattaci</Typography>
