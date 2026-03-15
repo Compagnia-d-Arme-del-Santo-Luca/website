@@ -39,21 +39,17 @@ const MainPage = () => {
         </ProjectSpotlight>
         {/*  2. Attività didattiche */}
         <ProjectSpotlight ref={refTeaching} scrollTarget={refTraining} anchor="left" image="images/didattica.png" title="Vita Civile">
-          <Typography>
+          <Typography pt={1}>
             La ricostruzione della vita civile rappresenta un elemento fondamentale delle attività della Compagnia. Non rappresetiamo solo soldati, ma
             anche tutte le altre figure che vivevano e operavano al seguito di una compagnie d'arme: cuochi, artigiani, religiosi, pellegrini e
             personale di supporto, tutti riproposti attraverso abiti, strumenti e gesti quotidiani ricostruiti su base storica. Particolare attenzione
             è dedicata agli aspetti della vita materiale: la preparazione dei cibi, l'organizzazione del banchetto, la sartoria storica, le pratiche
             mediche e devozionali ed il viaggio.
           </Typography>
-
-          <Typography variant="h4" pt={3}>
-            Attività Didattiche
-          </Typography>
-          <Typography pt={2}>
-            La Compagnia propone percorsi didattici dedicati alla scoperta della vita nel Basso Medioevo, illustrando le attività svolte all'interno
-            del campo armato e il loro ruolo nella quotidianità dei soldati. Attraverso dimostrazioni pratiche e spiegazioni storiche, vengono
-            presentati armamenti, addestramento, medicina medievale e aspetti della vita civile, offrendo un'esperienza educativa coinvolgente.
+          <Typography pt={1}>
+            La Compagnia propone percorsi didattici dedicati alla scoperta della vita nel Basso Medioevo, attraverso dimostrazioni pratiche e
+            spiegazioni storiche, vengono presentati armamenti, addestramento, medicina medievale e aspetti della vita civile, offrendo un'esperienza
+            educativa coinvolgente.
           </Typography>
         </ProjectSpotlight>
         {/*  3. Scuola d'arme */}
