@@ -222,7 +222,7 @@ const ProjectsPage = () => {
         classi sociali: Uomini d'arme, Artigiani, Nobili Cavalieri, Nobildonne, uomini e donne del popolo; Ogni Personaggio, il suo ruolo e il suo
         comportamento sono fondamentali alla ricostruzione di uno spaccato della vita di un campo d'arme del tardo XIV Secolo.
       </Typography>
-      <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
+      <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center" pb={2}>
         {people.map((props, idx) => (
           <EmplyeeStack key={idx} items={props} onClick={handleCardClick} />
         ))}
