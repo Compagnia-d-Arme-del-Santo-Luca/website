@@ -126,6 +126,7 @@ const people: EmployeeCardProps[][] = [
       image: 'images/people/albertino_della_muzzina/avatar.jpg',
       position: 'Fante',
       description: {
+        title: 'Albertino della contrada Muzzina',
         position: 'Falegname',
         image: 'images/people/albertino_della_muzzina/2021_10_28.jpg',
 
@@ -143,10 +144,11 @@ const people: EmployeeCardProps[][] = [
   // Benato Guerzi da Baura
   [
     {
-      name: 'Benato Guerzi da Baura',
+      name: 'Benato Guerzi',
       image: 'images/people/benato_guerzi_da_baura/avatar.jpg',
       position: 'Fante',
       description: {
+        title: 'Benato Guerzi da Baura',
         image: 'images/people/benato_guerzi_da_baura/2025_04_12.jpg',
         body: [
           "Le tracce documentarie relative a Benato Guerzi emergono in relazione al testamento di Lanzone, figlio del fu Giovanni de Gloriis, redatto l'8 agosto 1378 davanti al notaio Natale Sovertari. Tra le disposizioni testamentarie figura un legato di venti lire bolognesi destinato a pauperibus domicelabus maritandis. La consegna del legato, annotata dallo stesso notaio tre anni più tardi pro anima, consente di identificare le beneficiarie.",
@@ -163,10 +165,11 @@ const people: EmployeeCardProps[][] = [
   // Ghisola Casale da Castrocaro
   [
     {
-      name: 'Ghisola Casale da Castrocaro',
+      name: 'Ghisola Casale',
       image: 'images/people/ghisola_da_castrocaro/avatar.jpg',
       position: 'Cuoca',
       description: {
+        title: 'Ghisola Casale da Castrocaro',
         body: [
           'Figlia di un frate di un villaggio vicino a Castrocaro, vedova di Menguccio di Casale. Ha due figli, Betta ormai in età da marito e Biagio.',
           "Ereditano una casa, un pezzo di terra coltivata a vigna di quindici pertiche, un pezzo di terra di quattro tornature, una di tre tornature e altri tre appezzamenti di terra rispettivamente di tre, di una e di mezza tornatura, più due pecore, due agnelli e un'asina.",
