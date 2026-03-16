@@ -150,10 +150,15 @@ const BusinessCardPage = () => {
               color="text.secondary"
               fontSize="0.55rem"
               fontFamily="Oswald, sans-serif"
-              textTransform="uppercase"
+              // textTransform="uppercase"
               fontWeight={700}>
               {env.NAME}
             </Typography>
+            {env.ASSOCIATION != null && (
+              <Typography variant="caption" color="text.secondary" fontSize="0.55rem">
+                {env.ASSOCIATION}
+              </Typography>
+            )}
             <Typography variant="caption" color="text.secondary" fontSize="0.55rem" mb={0.5}>
               {env.POSITION}
             </Typography>
@@ -180,7 +185,7 @@ const BusinessCardPage = () => {
 
       <Box
         sx={{
-          ariaLabel: 'Print Business Card',
+          ariaLabel: 'Stampa',
           my: 7,
           display: 'flex',
           justifyContent: 'center',
@@ -189,7 +194,7 @@ const BusinessCardPage = () => {
           },
         }}>
         <Button variant="contained" startIcon={<Print />} onClick={() => window.print()}>
-          Print Business Card
+          Stampa
         </Button>
       </Box>
     </Page>
