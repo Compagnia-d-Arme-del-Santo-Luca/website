@@ -210,8 +210,14 @@ const ProjectsPage = () => {
     setDescription(null)
   }
   return (
-    <Page title="Personaggi">
-      <Typography pb={2}>
+    <Page
+      title="Personaggi"
+      sx={{
+        width: theme => theme.breakpoints.values.lg,
+        px: 'auto',
+        mx: 'auto',
+      }}>
+      <Typography px={{ xs: undefined, md: 2 }} pb={2}>
         Tutti i Personaggi storici della Compagnia sono realmente vissuti ed esistono attendibili fonti bibliografiche. Il gruppo è suddiviso per
         classi sociali: Uomini d'arme, Artigiani, Nobili Cavalieri, Nobildonne, uomini e donne del popolo; Ogni Personaggio, il suo ruolo e il suo
         comportamento sono fondamentali alla ricostruzione di uno spaccato della vita di un campo d'arme del tardo XIV Secolo.

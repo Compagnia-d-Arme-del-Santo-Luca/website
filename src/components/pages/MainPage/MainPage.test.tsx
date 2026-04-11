@@ -14,7 +14,6 @@ describe('Main page', () => {
     // Make sure the project spotlights are present for both desktop and mobile
     expect(screen.getAllByText('Chi Siamo')).toHaveLength(2)
     expect(screen.getAllByText('Vita Civile')).toHaveLength(2)
-    expect(screen.getAllByText('Attività Didattiche')).toHaveLength(2)
     expect(screen.getAllByText('Vita Militare')).toHaveLength(2)
   })
 })

@@ -39,13 +39,13 @@ const Description = (props: Props) => {
             borderTopColor: theme.palette.primary.main,
             p: `${theme.spacing(7)} ${theme.spacing(5)} ${theme.spacing(5.5)} ${theme.spacing(5)}`,
           })}>
-          <Grid container spacing={2} maxWidth="xl">
-            <Grid size={4}>
-              <Typography variant="h4">{props.title}</Typography>
-              {props.caption}
-            </Grid>
-            <Grid size={8}>{props.children}</Grid>
-          </Grid>
+          <Box maxWidth="xl">
+            <Typography variant="h4" mb={3}>
+              {props.title}
+            </Typography>
+            {props.caption}
+            <Box mt={3}>{props.children}</Box>
+          </Box>
         </Box>
       )
     case 'top':

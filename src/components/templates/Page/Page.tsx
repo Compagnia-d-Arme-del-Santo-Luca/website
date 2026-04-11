@@ -34,8 +34,9 @@ const Page: React.FC<PageProps> = ({ title, children, showCookieConsent, ...prop
             aria-label="page-title"
             textAlign="center"
             sx={{
-              mt: 6,
-              py: 6,
+              mx: 'auto',
+              pt: 10,
+              pb: 6,
             }}>
             {title}
           </Typography>
@@ -61,13 +62,13 @@ const Page: React.FC<PageProps> = ({ title, children, showCookieConsent, ...prop
       <Container
         id="page-content"
         component="main"
+        maxWidth={false}
         sx={{
-          mt: { xs: 8, md: 12 },
-          mb: 4,
+          mt: { xs: 4, md: 12 },
+          px: '0 !important',
           minHeight: '80vh',
-          mx: 'auto',
-          maxWidth: { xs: '100%', md: 'calc(100% - 4em)' },
-          width: theme => theme.breakpoints.values.lg,
+          maxWidth: '100%',
+          width: '100%',
           ...props.sx,
         }}>
         {children}
