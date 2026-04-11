@@ -12,9 +12,10 @@ const people: EmployeeCardProps[][] = [
     // { name: "Alberto V d'Este", image: 'images/people/albertoV/avatar.jpg', position: 'Marchese' },
     {
       name: 'Bartolomeo Contrari',
-      image: 'images/people/bartolomeo_contrari/avatar.jpg',
+      image: 'images/people/bartolomeo_contrari/2021_05_30-avatar.jpg',
       position: 'Nobile',
       description: {
+        image: 'images/people/bartolomeo_contrari/2021_05_30-pilgrim.jpg',
         body: [
           'Detto Boitus compare in un documento dotale per la figlia Agnese con il quale consegna a Turcolino Tramaione 10 lire di veneti grossi ed una casa in contrada San Paolo il cui valore è stato stimato 100 lire bolognesi.',
           'Un documento dimostra che si trova fuori città: si era recato a Bologna pro negociis domini marchionis. Era evidentemente molto vicino alla famiglia Estensi.',
@@ -27,6 +28,7 @@ const people: EmployeeCardProps[][] = [
       image: 'images/people/zan_biancolin/avatar.jpg',
       position: 'Cuoco',
       description: {
+        image: 'images/people/zan_biancolin/didattica.png',
         body: ['Caxarolus, lardarolo. Era un venditore di formaggio e lardo.'],
         captions: [
           "SANFILIPPO, Carla M. L'onomastica ferrarese del primo Trecento e gli Instrumenta fidelitatis. Libreriauniversitaria.it edizioni, 2016.",
@@ -85,10 +87,10 @@ const people: EmployeeCardProps[][] = [
   [
     {
       name: 'Zanino il Beccaio',
-      image: 'images/people/zannino_il_beccaio/avatar.jpg',
+      image: 'images/people/zannino_il_beccaio/2021_05_30-avatar_square.jpg',
       position: 'Fante',
       description: {
-        image: 'images/people/zannino_il_beccaio/2025_04_12.jpg',
+        image: 'images/people/zannino_il_beccaio/2021_05_30-pilgrim.jpg',
         body: [
           "Zanino compare come uno dei rappresentanti di Semiramide, vedova del notaio Giovanni de Richo ed erede del suo patrimonio. Il 5 novembre 1365, Zanino consegna 10 lire al frate domenicano Gregorio. L'atto specifica che si tratta de propriis denariis ipsius domine Simiramixie, pervenutile per eredità.",
           'Zanino è uno dei vari intermediari di cui la donna si serve per adempiere, gradualmente e in modo formale, agli obblighi lasciati dal defunto.',
@@ -126,6 +128,7 @@ const people: EmployeeCardProps[][] = [
       image: 'images/people/albertino_della_muzzina/avatar.jpg',
       position: 'Fante',
       description: {
+        title: 'Albertino della contrada Muzzina',
         position: 'Falegname',
         image: 'images/people/albertino_della_muzzina/2021_10_28.jpg',
 
@@ -143,10 +146,11 @@ const people: EmployeeCardProps[][] = [
   // Benato Guerzi da Baura
   [
     {
-      name: 'Benato Guerzi da Baura',
+      name: 'Benato Guerzi',
       image: 'images/people/benato_guerzi_da_baura/avatar.jpg',
       position: 'Fante',
       description: {
+        title: 'Benato Guerzi da Baura',
         image: 'images/people/benato_guerzi_da_baura/2025_04_12.jpg',
         body: [
           "Le tracce documentarie relative a Benato Guerzi emergono in relazione al testamento di Lanzone, figlio del fu Giovanni de Gloriis, redatto l'8 agosto 1378 davanti al notaio Natale Sovertari. Tra le disposizioni testamentarie figura un legato di venti lire bolognesi destinato a pauperibus domicelabus maritandis. La consegna del legato, annotata dallo stesso notaio tre anni più tardi pro anima, consente di identificare le beneficiarie.",
@@ -163,10 +167,12 @@ const people: EmployeeCardProps[][] = [
   // Ghisola Casale da Castrocaro
   [
     {
-      name: 'Ghisola Casale da Castrocaro',
+      name: 'Ghisola Casale',
       image: 'images/people/ghisola_da_castrocaro/avatar.jpg',
       position: 'Cuoca',
       description: {
+        title: 'Ghisola Casale da Castrocaro',
+        image: 'images/people/zan_biancolin/didattica.png',
         body: [
           'Figlia di un frate di un villaggio vicino a Castrocaro, vedova di Menguccio di Casale. Ha due figli, Betta ormai in età da marito e Biagio.',
           "Ereditano una casa, un pezzo di terra coltivata a vigna di quindici pertiche, un pezzo di terra di quattro tornature, una di tre tornature e altri tre appezzamenti di terra rispettivamente di tre, di una e di mezza tornatura, più due pecore, due agnelli e un'asina.",
@@ -180,9 +186,10 @@ const people: EmployeeCardProps[][] = [
   [
     {
       name: 'Perina',
-      image: 'images/people/perina/avatar.jpg',
+      image: 'images/people/perina/2024_10_20-avatar.jpg',
       position: 'Moglie di Ferantino',
       description: {
+        image: 'images/people/perina/2024_10_20-description.jpg',
         body: [
           'Perina compare in un documento notarile che mette in risalto la presenza di capitali femminili del tutto esterni al controllo dei mariti.',
           "Nell'agosto del 1371 la vedova di Francolino speziale, Beatrice, si trova in evidente difficoltà a soddisfare i creditori del defunto marito; a nome di due dei tre figli, nominati eredi universali, decide di alienare parte delle proprietà per ottenere la liquidità necessaria. Ne consegna una prima tranche a Ferantino di Ostellato, che le corrisponde il prezzo di 603 lire e 8 soldi di bolognini, e con un atto distinto, rogato dal notaio quello stesso giorno, vende un secondo gruppo di terre a Perina, moglie di Ferantino, la quale paga 75 lire bolognesi de propriis denariis dicte domine Perine.",
@@ -222,7 +229,7 @@ const ProjectsPage = () => {
         classi sociali: Uomini d'arme, Artigiani, Nobili Cavalieri, Nobildonne, uomini e donne del popolo; Ogni Personaggio, il suo ruolo e il suo
         comportamento sono fondamentali alla ricostruzione di uno spaccato della vita di un campo d'arme del tardo XIV Secolo.
       </Typography>
-      <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
+      <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center" pb={2}>
         {people.map((props, idx) => (
           <EmplyeeStack key={idx} items={props} onClick={handleCardClick} />
         ))}
