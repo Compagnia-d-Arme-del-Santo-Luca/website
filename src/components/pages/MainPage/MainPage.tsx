@@ -25,7 +25,7 @@ const MainPage = () => {
           anchor="right"
           // anchor="left"
           image="images/about-us.png"
-          mobileImage="images/about-us.png"
+          mobileImage="images/about-us.webp"
           title="Chi Siamo">
           <Typography pt={1}>
             La Compagnia d'Arme del Santo Luca è un gruppo di rievocazione storica di Ferrara affiliato al C.E.R.S. (Consorzio Europeo Rievocazioni
@@ -38,7 +38,13 @@ const MainPage = () => {
           </Typography>
         </ProjectSpotlight>
         {/*  2. Attività didattiche */}
-        <ProjectSpotlight ref={refTeaching} scrollTarget={refTraining} anchor="left" image="images/didattica.png" title="Vita Civile">
+        <ProjectSpotlight
+          ref={refTeaching}
+          scrollTarget={refTraining}
+          anchor="left"
+          image="images/didattica.png"
+          mobileImage="images/people/zan_biancolin/didattica.webp"
+          title="Vita Civile">
           <Typography pt={1}>
             La ricostruzione della vita civile rappresenta un elemento fondamentale delle attività della Compagnia. Non rappresetiamo solo soldati, ma
             anche tutte le altre figure che vivevano e operavano al seguito di una compagnie d'arme: cuochi, artigiani, religiosi, pellegrini e
@@ -53,7 +59,7 @@ const MainPage = () => {
           </Typography>
         </ProjectSpotlight>
         {/*  3. Scuola d'arme */}
-        <ProjectSpotlight ref={refTraining} anchor="bottom" image="images/battle.png" mobileImage="images/battle.png" title="Vita Militare">
+        <ProjectSpotlight ref={refTraining} anchor="bottom" image="images/battle.png" mobileImage="images/battle.webp" title="Vita Militare">
           <Typography pt={1}>
             La dimensione militare è il cuore operativo della Compagnia, che è in grado di allestire un campo d'arme del Basso Medioevo con tende
             storiche finemente arredate, armamenti e dotazioni coerenti con il periodo rievocato. All'interno del campo vengono mostrate le gerarchie,

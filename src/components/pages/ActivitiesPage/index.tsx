@@ -13,7 +13,7 @@ const ActivitiesPage = () => {
           armamenti, addestramento, medicina medievale e aspetti della vita civile, offrendo un'esperienza educativa coinvolgente.
         </Typography>
       </Section>
-      <Section imageUrl="images/activities/2021_06_15-sartoria.jpg" imageAlt="Sartoria">
+      <Section imageUrl="images/activities/2021_06_15-sartoria.webp" imageAlt="Sartoria">
         <Typography variant="h5">Sartoria</Typography>
         <Typography variant="body1" color="text.secondary">
           Nel Medioevo l'abbigliamento aveva un valore profondo: i vestiti non servivano solo a coprire il corpo, ma raccontavano chi eravamo, da dove
@@ -24,7 +24,7 @@ const ActivitiesPage = () => {
           forme, significati e dettagli che accompagnavano la vita di tutti i giorni e le occasioni speciali.
         </Typography>
       </Section>
-      <Section variant="secondary" imageUrl="images/activities/cucina.png" imageAlt="Cucina">
+      <Section variant="secondary" imageUrl="images/activities/cucina.webp" imageAlt="Cucina">
         <Typography variant="h5">Cucina</Typography>
         <Typography variant="body1" color="text.secondary">
           La cucina medievale è un mondo a parte, fatto di sapori, profumi e tecniche di cottura che oggi ci sembrano lontani ma che all'epoca erano
@@ -36,7 +36,7 @@ const ActivitiesPage = () => {
           tipici dell'epoca.
         </Typography>
       </Section>
-      <Section imageUrl="images/activities/2021_05_30-cerusico.jpg" imageAlt="Cucina">
+      <Section imageUrl="images/activities/2021_05_30-cerusico.webp" imageAlt="Cucina">
         <Typography variant="h5">Cerusico</Typography>
         <Typography variant="body1" color="text.secondary">
           Nell'accampamento medievale la figura del cerusico rivestiva un ruolo fondamentale: era colui che interveniva sulle ferite, conosceva gli
@@ -46,7 +46,7 @@ const ActivitiesPage = () => {
           tecniche del tempo.
         </Typography>
       </Section>
-      <Section variant="secondary" imageUrl="images/activities/2021_05_30-pilgrimage.jpg" imageAlt="Cucina">
+      <Section variant="secondary" imageUrl="images/activities/2021_05_30-pilgrimage.webp" imageAlt="Cucina">
         <Typography variant="h5">Pellegrinaggio</Typography>
         <Typography variant="body1" color="text.secondary">
           Il pellegrinaggio nel Medioevo era molto più di un viaggio: era un'esperienza di spiritualità, cultura e incontro. All'interno delle nostre
@@ -56,7 +56,7 @@ const ActivitiesPage = () => {
           traversate a piedi nel cuore dell'Europa medievale.
         </Typography>
       </Section>
-      <Section imageUrl="images/activities/2019_02_24-Armi.jpg" imageAlt="Cucina">
+      <Section imageUrl="images/activities/2019_02_24-Armi.webp" imageAlt="Cucina">
         <Typography variant="h5">Armi e armature</Typography>
         <Typography variant="body1" color="text.secondary">
           Alla base della vita militare medievale c'erano le armi e le armature: oggetti di straordinaria ingegneria e simboli di uno stile di
@@ -71,7 +71,7 @@ const ActivitiesPage = () => {
         variant="secondary"
         title="Organizzazione eventi"
         headline="La compagnia unisce professionalità e creatività per nell'ideare ed organizzare eventi di stampo medievale. Offre la possibilità di curare singoli spettacoli o intere manifestazioni in base alle esigenze dei singoli organizzatori."
-        imageUrl="images/activities/2018_04_21_gorizia.jpg"
+        imageUrl="images/activities/2018_04_21_gorizia.webp"
         imageAlt="Gorizia 2018">
         <Typography variant="body1" color="text.secondary">
           La Compagnia d'Arme del Santo Luca partecipa a una varietà di manifestazioni e rievocazioni storiche, collaborando con enti pubblici,
