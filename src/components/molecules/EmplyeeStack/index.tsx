@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import { Box, IconButton } from '@mui/material'
 import ShuffleIcon from '@mui/icons-material/NextPlan'
 
@@ -21,10 +21,12 @@ const EmplyeeStack: FC<Props> = ({
   onClick,
 }) => {
   const [items, setItems] = useState(initialItems)
+  const [prevInitialItems, setPrevInitialItems] = useState(initialItems)
 
-  useEffect(() => {
+  if (prevInitialItems !== initialItems) {
+    setPrevInitialItems(initialItems)
     setItems(initialItems)
-  }, [initialItems])
+  }
 
   const handleTopClick = () => {
     if (items.length) {
