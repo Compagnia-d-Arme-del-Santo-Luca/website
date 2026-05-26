@@ -46,7 +46,7 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@types/use-analytics": "^0.0.3",
-    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
     "@typescript-eslint/parser": "^8.32.1",
     "@vitest/coverage-istanbul": "^4.1.7",
     "eslint": "^10.4.0",
