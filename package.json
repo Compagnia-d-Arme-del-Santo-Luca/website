@@ -48,7 +48,7 @@
     "@types/use-analytics": "^0.0.3",
     "@typescript-eslint/eslint-plugin": "^8.69.0",
     "@typescript-eslint/parser": "^8.32.1",
-    "@vitest/coverage-istanbul": "^4.1.11",
+    "@vitest/coverage-istanbul": "^5.0.0",
     "eslint": "^10.9.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
@@ -58,6 +58,6 @@
     "jsdom": "^29.1.1",
     "prettier": "^3.9.6",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.7"
+    "vitest": "^5.0.0"
   }
 }
