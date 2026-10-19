@@ -64,7 +64,7 @@ describe('BusinessCardPage', () => {
     const user = userEvent.setup()
     render(<BusinessCardPage />)
 
-    await user.click(screen.getByText('Print Business Card'))
+    await user.click(screen.getByText('Stampa'))
 
     expect(mockPrint).toHaveBeenCalledTimes(1)
   })
