@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import { Box, IconButton } from '@mui/material'
 import ShuffleIcon from '@mui/icons-material/NextPlan'
 
-import { EmplyeeCard, EmployeeCardProps } from 'components/molecules/EmplyeeCard/index.js'
+import { EmployeeCard, EmployeeCardProps } from 'components/molecules/EmplyeeCard/index.js'
 import { EmployeeDescription } from 'components/molecules/EmployeeDescription/index.js'
 
 interface Props {
@@ -35,7 +35,7 @@ const EmplyeeStack: FC<Props> = ({
   }
 
   if (items.length === 0) return null
-  if (items.length === 1) return <EmplyeeCard {...items[0]} onClick={onClick} />
+  if (items.length === 1) return <EmployeeCard {...items[0]} onClick={onClick} />
 
   return (
     <Box
@@ -45,7 +45,7 @@ const EmplyeeStack: FC<Props> = ({
         height: 360 + offsetStep * Math.min(initialItems.length - 1, maxVisible),
       }}>
       {items.slice(0, maxVisible).map((props, idx) => (
-        <EmplyeeCard
+        <EmployeeCard
           {...props}
           onClick={onClick}
           key={idx}

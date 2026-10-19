@@ -1,5 +1,6 @@
 import { FC, useMemo } from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, CardProps, Typography } from '@mui/material'
+import InfoOutline from '@mui/icons-material/InfoOutline'
 
 import { EmployeeDescription } from 'components/molecules/EmployeeDescription/index.js'
 
@@ -11,9 +12,9 @@ export type EmployeeCardProps = Omit<CardProps, 'onClick'> & {
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>, description: EmployeeDescription) => void
 }
 
-export const EmplyeeCard: FC<EmployeeCardProps> = ({ name, position, image, description = {}, sx, onClick, ...props }) => {
+export const EmployeeCard: FC<EmployeeCardProps> = ({ name, position, image, description = {}, sx, onClick, ...props }) => {
   const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    onClick(event, {
+    onClick?.(event, {
       title: name,
       image: image,
       position: position,
@@ -22,7 +23,7 @@ export const EmplyeeCard: FC<EmployeeCardProps> = ({ name, position, image, desc
   }
   const content = useMemo(
     () => [
-      <CardMedia component="img" sx={{ minHeight: '140' }} image={image} alt={`${name} image`} />,
+      <CardMedia component="img" sx={{ minHeight: '140px' }} image={image} alt={`${name} image`} />,
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}
@@ -32,9 +33,12 @@ export const EmplyeeCard: FC<EmployeeCardProps> = ({ name, position, image, desc
             {position}
           </Typography>
         )}
+        {typeof onClick !== 'undefined' && (
+          <InfoOutline fontSize="small" sx={{ color: 'text.disabled', position: 'absolute', bottom: 8, right: 8 }} />
+        )}
       </CardContent>,
     ],
-    [name, position, image]
+    [name, position, image, onClick]
   )
   return (
     <Card sx={{ flexShrink: 0, width: 270, height: 360, ...sx }} {...props} onClick={handleClick}>
@@ -43,4 +47,4 @@ export const EmplyeeCard: FC<EmployeeCardProps> = ({ name, position, image, desc
   )
 }
 
-export default EmplyeeCard
+export default EmployeeCard

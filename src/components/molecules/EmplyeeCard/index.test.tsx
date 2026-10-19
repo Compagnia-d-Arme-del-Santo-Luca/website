@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { vi } from 'vitest'
 
-import EmplyeeCard from './index'
+import EmployeeCard from './index'
 
 describe('EmplyeeCard', () => {
   const name = 'John Doe'
@@ -9,7 +9,7 @@ describe('EmplyeeCard', () => {
   const position = 'Blacksmith'
 
   it('renders name, image and optional position', () => {
-    render(<EmplyeeCard name={name} image={image} position={position} />)
+    render(<EmployeeCard name={name} image={image} position={position} />)
 
     expect(screen.getByText(name)).toBeInTheDocument()
     expect(screen.getByText(position)).toBeInTheDocument()
@@ -22,7 +22,7 @@ describe('EmplyeeCard', () => {
   it('calls onClick with (event, description) payload', () => {
     const description = { body: ['this is a description for John Doe'] }
     const handleClick = vi.fn()
-    render(<EmplyeeCard name={name} image={image} position={position} description={description} onClick={handleClick} />)
+    render(<EmployeeCard name={name} image={image} position={position} description={description} onClick={handleClick} />)
 
     fireEvent.click(screen.getByText(name))
 
@@ -43,7 +43,7 @@ describe('EmplyeeCard', () => {
       body: ['this is a description for Jane Doe'],
     }
     const handleClick = vi.fn()
-    render(<EmplyeeCard name={name} image={image} position={position} description={description} onClick={handleClick} />)
+    render(<EmployeeCard name={name} image={image} position={position} description={description} onClick={handleClick} />)
 
     fireEvent.click(screen.getByText(name))
 
