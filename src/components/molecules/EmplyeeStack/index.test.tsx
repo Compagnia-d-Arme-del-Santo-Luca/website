@@ -8,7 +8,7 @@ import EmplyeeStack from './index'
 // Mock EmplyeeCard to make click handling deterministic in tests
 vi.mock('components/molecules/EmplyeeCard/index.js', () => ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  EmplyeeCard: (props: any) => (
+  EmployeeCard: (props: any) => (
     <div
       data-testid="mock-card"
       onClick={e => props.onClick?.(e, { title: props.name, image: props.image, position: props.position, ...(props.description || {}) })}>
