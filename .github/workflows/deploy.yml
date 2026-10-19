@@ -4,7 +4,7 @@ name: Deployment (Staging)
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -20,8 +20,8 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v6
         with:
-          node-version: "lts/*"
-          cache: "npm"
+          node-version: 'lts/*'
+          cache: 'npm'
 
       - name: Set environment variables
         run: |
@@ -32,8 +32,8 @@ jobs:
           if [[ -n "${{ vars.VITE_BC_POSITION }}" ]]; then
             echo "VITE_BC_POSITION=${{ vars.VITE_BC_POSITION }}" >> .env
           fi
-          if [[ -n "${{ vars.VITE_BC_VAT }}" ]]; then
-            echo "VITE_BC_VAT=${{ vars.VITE_BC_VAT }}" >> .env
+          if [[ -n "${{ vars.VITE_BC_INSTAGRAM }}" ]]; then
+            echo "VITE_BC_INSTAGRAM=${{ vars.VITE_BC_INSTAGRAM }}" >> .env
           fi
           if [[ -n "${{ vars.VITE_BC_FACEBOOK }}" ]]; then
             echo "VITE_BC_FACEBOOK=${{ vars.VITE_BC_FACEBOOK }}" >> .env
