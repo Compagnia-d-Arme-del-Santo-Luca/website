@@ -55,7 +55,7 @@ const Footer: React.FC<FooterProps> = () => {
 
       <Typography variant="subtitle2" align="center" color="text.secondary" component="em" mt={3}>
         Sito realizzato da{' '}
-        <Link href="https://www.m-tartari.eu" color="inherit">
+        <Link href="https://www.m-tartari.it" color="inherit">
           m-tartari
         </Link>
       </Typography>
