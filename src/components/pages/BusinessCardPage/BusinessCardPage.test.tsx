@@ -6,6 +6,7 @@ import BusinessCardPage from './index.js'
 
 vi.mock('./envVars.js', () => ({
   NAME: 'Test Name',
+  ASSOCIATION: 'Test Association',
   POSITION: 'Test Position',
   VAT: 'Test VAT',
   PHONE: '+123456789',
@@ -28,6 +29,7 @@ describe('BusinessCardPage', () => {
 
     // Name appears in uppercase in the first card
     expect(screen.getByText('Test Name')).toBeInTheDocument()
+    expect(screen.getByText('Test Association')).toBeInTheDocument()
     expect(screen.getByText('Test Position')).toBeInTheDocument()
 
     // Check if values are rendered correctly in the second card
@@ -62,7 +64,7 @@ describe('BusinessCardPage', () => {
     const user = userEvent.setup()
     render(<BusinessCardPage />)
 
-    await user.click(screen.getByText('Print Business Card'))
+    await user.click(screen.getByText('Stampa'))
 
     expect(mockPrint).toHaveBeenCalledTimes(1)
   })

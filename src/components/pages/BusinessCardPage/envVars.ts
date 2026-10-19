@@ -1,6 +1,7 @@
 /* istanbul ignore file */
 export const NAME = import.meta.env.VITE_BC_NAME || '[FULL NAME]'
-export const POSITION = import.meta.env.VITE_BC_POSITION || 'Ass. di rievocazione storica affiliata C.E.R.S. (XIV-XV secolo)'
+export const ASSOCIATION = import.meta.env.VITE_BC_ASSOCIATION || 'Ass. di rievocazione storica affiliata C.E.R.S.'
+export const POSITION = import.meta.env.VITE_BC_POSITION || '(fine XIV - inizio XV secolo)'
 export const PHONE = import.meta.env.VITE_BC_PHONE || null
 export const EMAIL = import.meta.env.VITE_BC_EMAIL || '[Redacted for privacy]'
 export const FACEBOOK = import.meta.env.VITE_BC_FACEBOOK || 'compagniadarmedelsantoluca'
