@@ -20,7 +20,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "style/*": ["./src/style/*"]
+    },
   },
   "include": [
     "src",
