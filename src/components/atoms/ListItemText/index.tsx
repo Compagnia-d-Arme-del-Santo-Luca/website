@@ -7,7 +7,12 @@ interface ListItemTextProps extends ListItemProps {
 const ListItemText: React.FC<ListItemTextProps> = ({ title, children, ...props }) => (
   <ListItem component={Typography} color="text.secondary" {...props}>
     {title && (
-      <Typography component="b" fontWeight={700} color="text.primary">
+      <Typography
+        component="b"
+        sx={{
+          fontWeight: 700,
+          color: 'text.primary',
+        }}>
         {title}{' '}
       </Typography>
     )}

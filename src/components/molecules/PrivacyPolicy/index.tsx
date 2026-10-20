@@ -16,7 +16,13 @@ const PrivacyPolicy = () => (
     <SectionHeader id="privacy-policy" aria-label="privacy-policy" color="inherit">
       Privacy Policy
     </SectionHeader>
-    <Typography variant="subtitle1" color="textSecondary" component="p" pb={4}>
+    <Typography
+      variant="subtitle1"
+      color="textSecondary"
+      component="p"
+      sx={{
+        pb: 4,
+      }}>
       Data ultimo aggiornamento: Feb. 1, 2026
     </Typography>
 

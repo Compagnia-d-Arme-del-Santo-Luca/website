@@ -1,6 +1,6 @@
 import { FC, useMemo } from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, CardProps, Typography } from '@mui/material'
-import InfoOutline from '@mui/icons-material/InfoOutline'
+import InfoOutlined from '@mui/icons-material/InfoOutlined'
 
 import { EmployeeDescription } from 'components/molecules/EmployeeDescription/index.js'
 
@@ -34,7 +34,7 @@ export const EmployeeCard: FC<EmployeeCardProps> = ({ name, position, image, des
           </Typography>
         )}
         {typeof onClick !== 'undefined' && (
-          <InfoOutline fontSize="small" sx={{ color: 'text.disabled', position: 'absolute', bottom: 8, right: 8 }} />
+          <InfoOutlined fontSize="small" sx={{ color: 'text.disabled', position: 'absolute', bottom: 8, right: 8 }} />
         )}
       </CardContent>,
     ],

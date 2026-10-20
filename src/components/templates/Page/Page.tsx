@@ -32,8 +32,8 @@ const Page: React.FC<PageProps> = ({ title, children, showCookieConsent, ...prop
             id="page-title"
             variant="h1"
             aria-label="page-title"
-            textAlign="center"
             sx={{
+              textAlign: 'center',
               mx: 'auto',
               pt: 10,
               pb: 6,

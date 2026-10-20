@@ -63,17 +63,21 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
         {props.headline && (
           <Typography
             variant="body1"
-            color="text.secondary"
-            sx={theme => ({
-              paddingBottom: 3,
-              [theme.breakpoints.only('md')]: {
-                width: theme.breakpoints.values.md,
-                maxWidth: 'calc(100% - 4em)',
+            sx={[
+              {
+                color: 'text.secondary',
               },
-              [theme.breakpoints.up('lg')]: {
-                width: theme.breakpoints.values.lg,
-              },
-            })}>
+              theme => ({
+                paddingBottom: 3,
+                [theme.breakpoints.only('md')]: {
+                  width: theme.breakpoints.values.md,
+                  maxWidth: 'calc(100% - 4em)',
+                },
+                [theme.breakpoints.up('lg')]: {
+                  width: theme.breakpoints.values.lg,
+                },
+              }),
+            ]}>
             {props.headline}
           </Typography>
         )}
@@ -107,7 +111,14 @@ const Section: React.FC<SectionProps> = ({ variant = 'primary', imageUrl, imageA
           {imageUrl &&
             (imageCaption ? (
               <Box sx={{ flex: 4, flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                <Box component="img" src={imageUrl} alt={imageAlt} width="100%" />
+                <Box
+                  component="img"
+                  src={imageUrl}
+                  alt={imageAlt}
+                  sx={{
+                    width: '100%',
+                  }}
+                />
                 {imageCaption}
               </Box>
             ) : (
