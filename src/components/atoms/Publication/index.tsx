@@ -17,13 +17,29 @@ type AwardEntryProps = {
 const Publication = ({ Component = Box, ...props }: AwardEntryProps) => {
   return (
     <Component sx={{ pl: 2, ...props.sx }}>
-      <Box display="flex" gap={1} alignItems="flex-start">
-        <Typography variant="subtitle1" color="primary.main">
+      <Box
+        sx={{
+          display: 'flex',
+          gap: 1,
+          alignItems: 'flex-start',
+        }}>
+        <Typography
+          variant="subtitle1"
+          sx={{
+            color: 'primary.main',
+          }}>
           {props.year}
         </Typography>
-        <Typography color="text.secondary">
+        <Typography
+          sx={{
+            color: 'text.secondary',
+          }}>
           {props.authors},{' '}
-          <Typography component="span" color="text.primary">
+          <Typography
+            component="span"
+            sx={{
+              color: 'text.primary',
+            }}>
             <b>{props.title}</b>
           </Typography>
           , In: {props.location}

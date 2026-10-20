@@ -14,18 +14,44 @@ type AwardEntryProps = {
 const Award = ({ Component = Box, ...props }: AwardEntryProps) => {
   return (
     <Component sx={{ pl: 2, ...props.sx }}>
-      <Box display="flex" gap={1} alignItems={{ sm: 'flex-start', md: 'center' }}>
-        <Typography variant="subtitle1" color="primary.main">
+      <Box
+        sx={{
+          display: 'flex',
+          gap: 1,
+          alignItems: { sm: 'flex-start', md: 'center' },
+        }}>
+        <Typography
+          variant="subtitle1"
+          sx={{
+            color: 'primary.main',
+          }}>
           {props.year}
         </Typography>
-        <Box display={{ sm: 'block', md: 'flex' }} flexGrow={1} columnGap={1} flexWrap="wrap" alignItems="flex-end">
+        <Box
+          sx={{
+            display: { sm: 'block', md: 'flex' },
+            flexGrow: 1,
+            columnGap: 1,
+            flexWrap: 'wrap',
+            alignItems: 'flex-end',
+          }}>
           <Typography variant="subtitle1" {...props.titleProps}>
             <b>{props.title}</b>
           </Typography>
-          <Typography variant="button" color="text.secondary" flexGrow={1}>
+          <Typography
+            variant="button"
+            sx={{
+              color: 'text.secondary',
+              flexGrow: 1,
+            }}>
             {props.organization}
           </Typography>
-          <Typography variant="subtitle2" color="text.secondary" flexShrink={0}>
+          <Typography
+            variant="subtitle2"
+            sx={{
+              color: 'text.secondary',
+              flexShrink: 0,
+            }}>
             <em>{props.location}</em>
           </Typography>
         </Box>

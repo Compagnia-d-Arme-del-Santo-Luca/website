@@ -39,12 +39,24 @@ const Description = (props: Props) => {
             borderTopColor: theme.palette.primary.main,
             p: `${theme.spacing(7)} ${theme.spacing(5)} ${theme.spacing(5.5)} ${theme.spacing(5)}`,
           })}>
-          <Box maxWidth="xl">
-            <Typography variant="h4" mb={3}>
+          <Box
+            sx={{
+              maxWidth: 'xl',
+            }}>
+            <Typography
+              variant="h4"
+              sx={{
+                mb: 3,
+              }}>
               {props.title}
             </Typography>
             {props.caption}
-            <Box mt={3}>{props.children}</Box>
+            <Box
+              sx={{
+                mt: 3,
+              }}>
+              {props.children}
+            </Box>
           </Box>
         </Box>
       )
@@ -66,7 +78,12 @@ const Description = (props: Props) => {
             p: `${theme.spacing(5)} ${theme.spacing(5)} ${theme.spacing(3)} ${theme.spacing(5)}`,
             // p: '5.1em 3.1em 3.1em 3.1em',
           })}>
-          <Grid container spacing={2} maxWidth="xl">
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              maxWidth: 'xl',
+            }}>
             <Grid size={4}>
               <Typography variant="h4">{props.title}</Typography>
               {props.caption}
@@ -94,7 +111,12 @@ const Description = (props: Props) => {
           })}>
           <Typography variant="h4">{props.title}</Typography>
           {props.caption}
-          <Box mt={3}>{props.children}</Box>
+          <Box
+            sx={{
+              mt: 3,
+            }}>
+            {props.children}
+          </Box>
         </Box>
       )
     case 'left':
@@ -114,11 +136,20 @@ const Description = (props: Props) => {
             p: `${theme.spacing(10)} ${theme.spacing(5)} ${theme.spacing(5)} ${theme.spacing(5)}`,
             // p: '5.1em 3.1em 3.1em 3.1em',
           })}>
-          <Typography variant="h4" mb={3}>
+          <Typography
+            variant="h4"
+            sx={{
+              mb: 3,
+            }}>
             {props.title}
           </Typography>
           {props.caption}
-          <Box mt={3}>{props.children}</Box>
+          <Box
+            sx={{
+              mt: 3,
+            }}>
+            {props.children}
+          </Box>
         </Box>
       )
   }

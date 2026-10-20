@@ -30,7 +30,11 @@ const ListItemLink: React.FC<ListItemProps> = ({ children, ...props }) => (
           },
         },
       })}>
-      <Stack direction="row" alignItems="center">
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+        }}>
         {children}
       </Stack>
     </Link>
@@ -52,7 +56,11 @@ const ContactPage = () => {
       <List>
         <ListItemLink href="mailto:compagniasantoluca@gmail.com" aria-label="Email link">
           <DraftsIcon fontSize="large" />
-          <Typography variant="h6" ml={2}>
+          <Typography
+            variant="h6"
+            sx={{
+              ml: 2,
+            }}>
             compagniasantoluca
             <wbr />
             @gmail.com
@@ -60,13 +68,21 @@ const ContactPage = () => {
         </ListItemLink>
         <ListItemLink aria-label="Facebook Link" href="https://facebook.com/compagniadarmedelsantoluca">
           <FacebookIcon fontSize="large" />
-          <Typography variant="h6" ml={2}>
+          <Typography
+            variant="h6"
+            sx={{
+              ml: 2,
+            }}>
             @compagniadarmedelsantoluca
           </Typography>
         </ListItemLink>
         <ListItemLink aria-label="Instagram link" href="https://www.instagram.com/compagnia_darme_santo_luca/">
           <Instagram fontSize="large" />
-          <Typography variant="h6" ml={2}>
+          <Typography
+            variant="h6"
+            sx={{
+              ml: 2,
+            }}>
             @compagnia_darme_santo_luca
           </Typography>
         </ListItemLink>

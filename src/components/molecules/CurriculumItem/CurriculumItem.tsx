@@ -62,38 +62,81 @@ const CurriculumItem = (props: CurriculumEntryProps) => {
             marginLeft: 2,
           },
         }}>
-        <Grid container width={1} direction="row" justifyContent="space-between" alignItems="stretch" display={{ xs: 'none', sm: 'flex' }}>
+        <Grid
+          container
+          direction="row"
+          sx={{
+            width: 1,
+            justifyContent: 'space-between',
+            alignItems: 'stretch',
+            display: { xs: 'none', sm: 'flex' },
+          }}>
           <Grid component={Typography} size={9} variant="h6">
             <b>{props.title}</b>
           </Grid>
-          <Grid component={Typography} size={3} variant="h6" color="primary.main" textAlign="right">
+          <Grid
+            component={Typography}
+            size={3}
+            variant="h6"
+            sx={{
+              color: 'primary.main',
+              textAlign: 'right',
+            }}>
             {props.dates}
           </Grid>
           {typeof props.company !== 'undefined' && (
-            <Grid component={Typography} size={9} variant="overline" color="text.secondary">
+            <Grid
+              component={Typography}
+              size={9}
+              variant="overline"
+              sx={{
+                color: 'text.secondary',
+              }}>
               {props.company}
             </Grid>
           )}
           {typeof props.location !== 'undefined' && (
-            <Grid component={Typography} size={3} variant="subtitle1" color="text.secondary" textAlign="right">
+            <Grid
+              component={Typography}
+              size={3}
+              variant="subtitle1"
+              sx={{
+                color: 'text.secondary',
+                textAlign: 'right',
+              }}>
               <em>{props.location}</em>
             </Grid>
           )}
         </Grid>
-        <Box display={{ xs: 'block', sm: 'none' }}>
-          <Typography variant="subtitle1" color="primary.main">
+        <Box
+          sx={{
+            display: { xs: 'block', sm: 'none' },
+          }}>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              color: 'primary.main',
+            }}>
             {props.dates}
           </Typography>
           <Typography variant="h6">
             <b>{props.title}</b>
           </Typography>
           {typeof props.company !== 'undefined' && (
-            <Typography variant="button" color="text.secondary">
+            <Typography
+              variant="button"
+              sx={{
+                color: 'text.secondary',
+              }}>
               {props.company}
             </Typography>
           )}
           {typeof props.location !== 'undefined' && (
-            <Typography variant="subtitle2" color="text.secondary">
+            <Typography
+              variant="subtitle2"
+              sx={{
+                color: 'text.secondary',
+              }}>
               <em>{props.location}</em>
             </Typography>
           )}

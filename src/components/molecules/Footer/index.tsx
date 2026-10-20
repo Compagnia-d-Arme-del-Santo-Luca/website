@@ -24,19 +24,39 @@ const Footer: React.FC<FooterProps> = () => {
         flexDirection: 'column',
         '@media print': { py: 3 },
       }}>
-      <Stack direction="row" gap={2}>
+      <Stack
+        direction="row"
+        sx={{
+          gap: 2,
+        }}>
         <EmailIconLink fontSize="large" href="mailto:compagniasantoluca@gmail.com" />
         <FacebookIconLink fontSize="large" href="https://facebook.com/compagniadarmedelsantoluca/" />
         <InstagramIconLink fontSize="large" href="https://www.instagram.com/compagnia_darme_santo_luca/" />
       </Stack>
 
-      <Typography variant="subtitle2" align="center" color="text.secondary" component="em" mt={3}>
+      <Typography
+        variant="subtitle2"
+        align="center"
+        component="em"
+        sx={{
+          color: 'text.secondary',
+          mt: 3,
+        }}>
         © {year} Compagnia d'Arme del Santo Luca. All rights reserved.
       </Typography>
 
-      <Stack mt={1}>
+      <Stack
+        sx={{
+          mt: 1,
+        }}>
         <Link component={RouterLink} to="/privacy#cookie-preferences" color="textSecondary">
-          <Stack direction="row" alignItems="center" justifyContent="center" gap={1}>
+          <Stack
+            direction="row"
+            sx={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 1,
+            }}>
             <CookieIcon fontSize="inherit" />
             <Typography variant="subtitle2" component="span">
               Cookie Preferences
@@ -44,7 +64,13 @@ const Footer: React.FC<FooterProps> = () => {
           </Stack>
         </Link>
         <Link component={RouterLink} to="/privacy" color="textSecondary">
-          <Stack direction="row" alignItems="center" justifyContent="center" gap={1}>
+          <Stack
+            direction="row"
+            sx={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 1,
+            }}>
             <PolicyIcon fontSize="inherit" />
             <Typography variant="subtitle2" component="span">
               Privacy Policy
@@ -53,7 +79,14 @@ const Footer: React.FC<FooterProps> = () => {
         </Link>
       </Stack>
 
-      <Typography variant="subtitle2" align="center" color="text.secondary" component="em" mt={3}>
+      <Typography
+        variant="subtitle2"
+        align="center"
+        component="em"
+        sx={{
+          color: 'text.secondary',
+          mt: 3,
+        }}>
         Sito realizzato da{' '}
         <Link href="https://www.m-tartari.it" color="inherit">
           m-tartari

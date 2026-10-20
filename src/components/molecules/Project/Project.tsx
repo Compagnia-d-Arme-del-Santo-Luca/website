@@ -54,7 +54,12 @@ const Project = (props: ProjectProps) => {
           <Typography variant="h5">
             <b>{props.title}</b>
           </Typography>
-          <Stack direction="row" gap={1} alignItems="center">
+          <Stack
+            direction="row"
+            sx={{
+              gap: 1,
+              alignItems: 'center',
+            }}>
             {props.subtitle}
           </Stack>
         </div>

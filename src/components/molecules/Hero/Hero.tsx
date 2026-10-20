@@ -46,27 +46,36 @@ const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) =
         }),
       })}>
       <Box
-        color="white"
-        sx={theme => ({
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '3em',
-          zIndex: 1,
+        sx={[
+          {
+            color: 'white',
+          },
+          theme => ({
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '3em',
+            zIndex: 1,
 
-          [theme.breakpoints.down('md')]: {
-            flexDirection: 'column',
-            textAlign: 'center',
-            padding: '2em',
-          },
-          [theme.breakpoints.up('md')]: {
-            flexDirection: 'row',
-            textAlign: 'right',
-            padding: '6em',
-          },
-        })}>
+            [theme.breakpoints.down('md')]: {
+              flexDirection: 'column',
+              textAlign: 'center',
+              padding: '2em',
+            },
+            [theme.breakpoints.up('md')]: {
+              flexDirection: 'row',
+              textAlign: 'right',
+              padding: '6em',
+            },
+          }),
+        ]}>
         <Box>
-          <Typography component="h1" variant="h1" maxWidth="md">
+          <Typography
+            component="h1"
+            variant="h1"
+            sx={{
+              maxWidth: 'md',
+            }}>
             Compagnia d'Arme{' '}
             <Typography component="small" variant="h2">
               del
@@ -76,10 +85,12 @@ const Hero = (props: { scrollTarget?: React.ForwardedRef<HTMLSelectElement> }) =
           <Typography variant="h3">Ferrara</Typography>
           <Stack
             direction="row"
-            gap={2}
-            mt={2}
-            justifyContent={{ xs: 'center', md: 'end' }}
-            color={t => (t.palette.mode === 'light' ? 'inherit' : 'text.secondary')}>
+            sx={{
+              gap: 2,
+              mt: 2,
+              justifyContent: { xs: 'center', md: 'end' },
+              color: t => (t.palette.mode === 'light' ? 'inherit' : 'text.secondary'),
+            }}>
             <EmailIconLink fontSize="large" sx={{ ':hover': { color: 'text.primary' } }} href="mailto:compagniasantoluca@gmail.com" />
             <FacebookIconLink fontSize="large" sx={{ ':hover': { color: 'text.primary' } }} href="https://facebook.com/compagniadarmedelsantoluca/" />
             <InstagramIconLink

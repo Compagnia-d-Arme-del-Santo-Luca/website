@@ -20,7 +20,11 @@ const EmployeeDescriptionDialog: React.FC<EmployeeDescriptionDialogProps> = ({ d
         {description.title}
       </Typography>
       {description.position && (
-        <Typography variant="h6" color="text.secondary">
+        <Typography
+          variant="h6"
+          sx={{
+            color: 'text.secondary',
+          }}>
           {description.position}
         </Typography>
       )}
@@ -45,14 +49,23 @@ const EmployeeDescriptionDialog: React.FC<EmployeeDescriptionDialogProps> = ({ d
       />
       {description.body &&
         description.body.map((paragraph, idx) => (
-          <Typography key={idx} pb={1}>
+          <Typography
+            key={idx}
+            sx={{
+              pb: 1,
+            }}>
             {paragraph}
           </Typography>
         ))}
       {description.captions && (
         <>
           <Divider sx={{ my: 2 }} />
-          <Stack color="text.secondary" mt={1} gap={1}>
+          <Stack
+            sx={{
+              color: 'text.secondary',
+              mt: 1,
+              gap: 1,
+            }}>
             {description.captions.map((caption, idx) => (
               <Typography key={idx} variant="caption">
                 {caption}

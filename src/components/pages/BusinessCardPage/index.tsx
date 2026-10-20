@@ -27,16 +27,29 @@ const TypographyLink = ({ icon: Icon, children, ...props }: TypographyProps<type
     rel="noopener noreferrer"
     target="_blank"
     underline="hover"
-    color="text.secondary"
     {...props}
-    sx={{ display: 'flex', alignItems: 'center', gap: 0.5, ...props.sx }}>
+    sx={[
+      {
+        color: 'text.secondary',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 0.5,
+        ...props.sx,
+      },
+      ...(Array.isArray(props.sx) ? props.sx : [props.sx]),
+    ]}>
     <Icon
       sx={{
         color: 'text.primary',
         fontSize: '0.7rem',
       }}
     />
-    <Typography variant="caption" color="text.secondary" fontSize="0.55rem">
+    <Typography
+      variant="caption"
+      sx={{
+        color: 'text.secondary',
+        fontSize: '0.55rem',
+      }}>
       {children}
     </Typography>
   </Box>
@@ -147,19 +160,31 @@ const BusinessCardPage = () => {
             }}>
             <Typography
               variant="subtitle2"
-              color="text.secondary"
-              fontSize="0.55rem"
-              fontFamily="Oswald, sans-serif"
-              // textTransform="uppercase"
-              fontWeight={700}>
+              sx={{
+                color: 'text.secondary',
+                fontSize: '0.55rem',
+                fontFamily: 'Oswald, sans-serif',
+                fontWeight: 700,
+              }}>
               {env.NAME}
             </Typography>
             {env.ASSOCIATION != null && (
-              <Typography variant="caption" color="text.secondary" fontSize="0.55rem">
+              <Typography
+                variant="caption"
+                sx={{
+                  color: 'text.secondary',
+                  fontSize: '0.55rem',
+                }}>
                 {env.ASSOCIATION}
               </Typography>
             )}
-            <Typography variant="caption" color="text.secondary" fontSize="0.55rem" mb={0.5}>
+            <Typography
+              variant="caption"
+              sx={{
+                color: 'text.secondary',
+                fontSize: '0.55rem',
+                mb: 0.5,
+              }}>
               {env.POSITION}
             </Typography>
             {env.PHONE != null && (

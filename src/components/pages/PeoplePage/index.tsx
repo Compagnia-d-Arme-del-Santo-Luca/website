@@ -224,12 +224,23 @@ const ProjectsPage = () => {
         px: 'auto',
         mx: 'auto',
       }}>
-      <Typography px={{ xs: undefined, md: 2 }} pb={2}>
+      <Typography
+        sx={{
+          px: { xs: undefined, md: 2 },
+          pb: 2,
+        }}>
         Tutti i Personaggi storici della Compagnia sono realmente vissuti ed esistono attendibili fonti bibliografiche. Il gruppo è suddiviso per
         classi sociali: Uomini d'arme, Artigiani, Nobili Cavalieri, Nobildonne, uomini e donne del popolo; Ogni Personaggio, il suo ruolo e il suo
         comportamento sono fondamentali alla ricostruzione di uno spaccato della vita di un campo d'arme del tardo XIV Secolo.
       </Typography>
-      <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center" pb={2}>
+      <Box
+        sx={{
+          display: 'flex',
+          gap: 1,
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          pb: 2,
+        }}>
         {people.map((props, idx) => (
           <EmplyeeStack key={idx} items={props} onClick={handleCardClick} />
         ))}
