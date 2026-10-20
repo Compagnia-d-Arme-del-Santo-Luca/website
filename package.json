@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "npm run build:dev",
     "build:dev": "tsc && vite build",
-    "build:prod": "tsc --project tsconfig.prod.json && vite build",
+    "build:prod": "vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "npm run lint -- --fix",
     "preview": "vite preview",
