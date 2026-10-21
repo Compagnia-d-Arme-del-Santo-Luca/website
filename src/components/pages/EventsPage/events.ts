@@ -2,10 +2,77 @@ import type { Event } from './types.js'
 
 export const events: Event[] = [
   {
-    id: '1',
+    id: '2026-Battaglia-di-Castagnaro',
+    title: 'Battaglia di Castagnaro',
+    date: new Date('2026-03-15'),
+    location: {
+      name: 'Castagnaro',
+      city: 'Castagnaro (VR)',
+      lat: 45.131728,
+      lng: 11.409024,
+      link: 'https://maps.app.goo.gl/wUQRSFoenw3yQGpcA',
+    },
+    link: 'https://www.facebook.com/battagliadicastagnaro',
+    image: 'https://www.cittadiverona.it/wp-content/uploads/2026/03/battaglia-di-castagnaro.jpg',
+    details: {
+      description:
+        "La Compagnia d'Arme del Santo Luca partecipa alla rievocazione storica della Battaglia di Castagnaro, svoltasi il 11 marzo 1387 tra le truppe veronesi e padovane.",
+    },
+  },
+  {
+    id: '2026-armi-e-bagagli',
+    title: 'Armi e Bagagli',
+    date: new Date('2026-03-21'),
+    endDate: new Date('2026-03-22'),
+    location: {
+      name: 'Piacenza Expo',
+      city: 'Piacenza (PC)',
+      lat: 45.0423607,
+      lng: 9.75375,
+      link: 'https://maps.app.goo.gl/FQAtyyK5zCZyaGzx9',
+    },
+    link: 'https://armiebagagli.org/',
+    image:
+      'https://cdn-az.allevents.in/events4/banners/20bf5b2083698b4b46dfe588787289a458284f6d7aac7594aa2b08c17e99e329-rimg-w1200-h444-dcdbd4d4-gmir?v=1772187768',
+    details: {
+      description:
+        'La più grande manifestazione italiana per operatori e appassionati della Rievocazione Storica, presso il quartiere fieristico di Piacenza, appuntamento imperdibile per chiunque operi nel settore storico/rievocativo.',
+    },
+  },
+  {
+    id: '2026-castelli-aperti',
+    title: 'Castelli Aperti',
+    date: new Date('2026-03-28'),
+    endDate: new Date('2026-03-29'),
+    location: {
+      name: 'Castello Formentini',
+      city: 'San Floriano del Colio (GO)',
+      lat: 45.982383,
+      lng: 13.587094,
+      link: 'https://maps.app.goo.gl/31JwcCUqcVfnb52M6',
+    },
+    link: 'https://castelloformentini.com/',
+    image: 'https://castelloformentini.com/wp-content/uploads/2024/10/DJI_0289-2048x1534.jpg',
+  },
+  {
+    id: '2026-isteituzione-del-podesta-di-mestre',
+    title: 'Istituzione del Podesta di Mestre',
+    date: new Date('2026-04-28'),
+    location: {
+      name: 'Mestre',
+      city: 'Mestre (VE)',
+      lat: 45.4953,
+      lng: 12.243998,
+      link: 'https://maps.app.goo.gl/VStWyWTRUESWN4tk6',
+    },
+    link: 'https://www.prolocomestre.it/storia_di_mestre/approfondimenti_storici/i_podesta_di_mestre_dal_1338_al_1797.php',
+    image: 'https://www.metropolitano.it/wp-content/uploads/2026/04/Mestre-2026-004-scaled.jpg',
+  },
+  {
+    id: '2026-4-passi-nel-medioevo',
     title: '4 Passi nel Medioevo',
-    date: new Date('2026-05-03'),
-    endDate: new Date('2026-05-04'),
+    date: new Date('2026-05-02'),
+    endDate: new Date('2026-05-03'),
     location: {
       name: 'Castello dei Ronchi',
       city: 'Crevalcore (BO)',
@@ -21,26 +88,6 @@ export const events: Event[] = [
     },
   },
   {
-    id: '2',
-    title: 'Armi e Bagabli',
-    date: new Date('2026-03-21'),
-    endDate: new Date('2026-03-22'),
-    location: {
-      name: 'Piacenza Expo',
-      city: 'Piacenza (PC)',
-      lat: 45.0423607,
-      lng: 9.75375,
-      link: 'https://maps.app.goo.gl/FQAtyyK5zCZyaGzx9',
-    },
-    link: 'https://armiebagagli.org/',
-    image:
-      'https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/687039739_1615155693950230_1523012821653618722_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_ohc=301psXNiznUQ7kNvwFIU2A_&_nc_oc=AdqgQ3sUtKe-X02NMO-pOaTgFocqAEc4rep8ZTUFvGN7e1sij1OdLeErW01aLp6NJKE&_nc_zt=23&_nc_ht=scontent-fco2-1.xx&_nc_gid=vfSFXIAfYJiRdDTqz1le-g&_nc_ss=7b2a8&oh=00_Af5QgkkEnukOrBqB9EiDmBbgNtXI4_Qi3WZ8eNzsg1MwZA&oe=69FFD320',
-    details: {
-      description:
-        'La più grande manifestazione italiana per operatori e appassionati della Rievocazione Storica, presso il quartiere fieristico di Piacenza, appuntamento imperdibile per chiunque operi nel settore storico/rievocativo.',
-    },
-  },
-  {
     id: 'trecentesca',
     title: 'Trecentesca',
     date: new Date('2026-05-16'),
@@ -53,8 +100,11 @@ export const events: Event[] = [
       link: 'https://maps.app.goo.gl/oV97GdTZejNjpneD8',
     },
     link: 'https://www.abbaziamorimondo.it/trecentesca-2026',
-    image:
-      'https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/645894440_26176732645298731_6691381800434721321_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=25d718&_nc_ohc=EIa29pGGa5QQ7kNvwHIRuQt&_nc_oc=AdpEUIYfsBiSh8HpwsT5KkFdSYvlZYkUOCOUl9DYdEQ9PTbGR0uaDmVjI5HKy6cugb4&_nc_zt=23&_nc_ht=scontent-fco2-1.xx&_nc_gid=EcW53pTVT3DWReZnsh_SSw&_nc_ss=7b2a8&oh=00_Af5duE5CS05V2-KRwthjoxoib2SIeP18zu5obSxr1R6J7g&oe=69FFBB66',
+    image: 'https://www.abbaziamorimondo.it/sites/default/files/trecentesca-2026.jpg',
+    details: {
+      description:
+        "La manifestazione internazionale di ricostruzione storica medioevale Trecentesca, ambientata nell'epoca viscontea e legata alla battaglia di Casorate, nel 2026, viene proposta nella sua versione completa. A fianco dell'ampia riproposizione di uno spaccato di vita medievale con arti e mestieri, associazioni di reenactors, provenienti da numerose nazioni straniere e naturalmente dall'Italia, ricostruiscono un vasto accampamento medioevale nel quale, oltre agli uomini d'arme, compaiono cuochi, fabbri, falegnami, mercanti, artigiani di ogni genere, per far rivivere la vita quotidiana all'epoca dei Visconti. Le giornate si concludono nel momento più spettacolare della battaglia vera e propria.",
+    },
   },
   {
     id: 'Palio dello Sparviero - Voci dal Medioevo di Trambaque',
@@ -74,25 +124,24 @@ export const events: Event[] = [
     },
   },
   {
-    id: '3',
-    title: 'Giostra del Borgo',
-    date: new Date('2026-06-13'),
+    id: '2026-Palio-di-Formigine',
+    title: 'Ludi di San Bartolomeo',
+    date: new Date('2026-08-23'),
     location: {
-      name: 'Ippodromo',
-      city: 'Ferrara',
-      lat: 44.82578,
-      lng: 11.612924,
-      link: 'https://maps.app.goo.gl/mqgVWmm8crAz7ofUA',
+      name: 'Castello di Formigine',
+      city: 'Formigine (MO)',
+      lat: 44.575161,
+      lng: 10.846327,
+      link: 'https://maps.app.goo.gl/hmgVc84mukgrFGPF6',
     },
-    image:
-      'https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/495026144_998527592485792_333972602704298657_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=2a1932&_nc_ohc=V-Rj6Zro94UQ7kNvwGL_LTQ&_nc_oc=AdqbGYdKAgeN0MyVzbsnRbz31W9qqEIyJMzesfZl9r0f33UcVC-00gGtdM62Y6eLZso&_nc_zt=23&_nc_ht=scontent-fco2-1.xx&_nc_gid=XaR2VZ5CeSlQhvYnG2Ofbg&_nc_ss=7b2a8&oh=00_Af6CgCkib7vEwAVeuiPwlTTjkQrBeeLqzpE2ZkxzdWmxDA&oe=69FFB224',
-    link: 'https://www.quintana.it',
+    link: 'https://www.comune.formigine.mo.it/vivere-formigine/eventi',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElBaFaLWqIdII137HrTJLy8a0dbyeUDRoXbPnXvR02Q&s=10',
   },
   {
     id: 'Mantova Medievale',
     title: 'Mantova Medievale',
-    date: new Date('2026-11-07'),
-    endDate: new Date('2026-11-08'),
+    date: new Date('2026-09-05'),
+    endDate: new Date('2026-09-06'),
     location: {
       name: 'Lungolago Gonzaga',
       city: 'Mantova',
@@ -101,19 +150,81 @@ export const events: Event[] = [
       link: 'https://maps.app.goo.gl/QF5UjjLb5HRYgLxg8',
     },
     link: 'http://www.mantovamedievale.it/',
-    image:
-      'https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/475772202_928196622760603_187755049466880515_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=2a1932&_nc_ohc=GFNIVf-3cKoQ7kNvwHWpMoA&_nc_oc=AdqCNjkyT6mYI9D8sIsmAgfQdXtrVMNOthjth3dfcGCvVgxVSJSG_SVWroEcBPbyI7k&_nc_zt=23&_nc_ht=scontent-fco2-1.xx&_nc_gid=nD82EIE8zEzhzr8oQIF78A&_nc_ss=7b2a8&oh=00_Af6Jg9HJBlMy--pZ0eQp_QZ18k1b-hSmMDp-zUC6ID5Yrw&oe=69FFE2CC',
+    image: 'https://www.mantovanotizie.com/wp-content/uploads/mantova-medievale-2026.jpg',
   },
   {
-    id: 'Autunno Ducale nelle Terre Estensi',
+    id: '2026-terra-del-sole',
+    title: 'A.D. 1387',
+    date: new Date('2026-09-19'),
+    endDate: new Date('2026-09-20'),
+    location: {
+      name: 'Terra del Sole',
+      city: 'Castrocaro Terme (FC)',
+      lat: 44.185733,
+      lng: 11.961154,
+      link: 'https://maps.app.goo.gl/RLzf4EY8B82EikAv7',
+    },
+    link: 'https://www.ad1387.com/',
+    image: 'https://castrocarotermeterradelsole.travel/app/uploads/2026/08/AD-SITO.png',
+    details: {
+      description:
+        'Nella suggestiva cornice dei Bastioni della città fortificata, i gruppi di ricostruzione storica ricreeranno la vita quotidiana tra il 1360 e il 1410, con costumi, attendamenti, arredi, armi e armature realizzati nel rispetto delle fonti e con particolare attenzione al rigore storico. Durante le due giornate sarà possibile visitare gli accampamenti e scoprire da vicino come si viveva in epoca medievale. All’interno della manifestazione verrà inoltre rievocata la Battaglia avvenuta nei pressi di Castrocaro nel 1387.',
+    },
+  },
+  {
+    id: '2026-Giostra-d-Arme',
+    title: "Giostra d'Arme",
+    date: new Date('2026-10-03'),
+    endDate: new Date('2026-10-04'),
+    location: {
+      name: 'San Gemini',
+      city: 'San Gemini (TR)',
+      lat: 42.613268,
+      lng: 12.546192,
+      link: 'https://maps.app.goo.gl/3L4iwdB8KvbfLSSS7',
+    },
+    link: 'https://www.entegiostradellarme.it/',
+    image: 'https://framerusercontent.com/images/m857nAz0TsgUEeDKtPv2qZnv2s.jpg?scale-down-to=2048&width=4134&height=2067',
+  },
+  {
+    id: '2026-Palio-del-Rosario',
+    title: 'Palio del Rosario',
+    date: new Date('2026-10-04'),
+    location: {
+      name: 'Galzignano Terme',
+      city: 'Galzignano Terme (PD)',
+      lat: 45.30848,
+      lng: 11.729469,
+      link: 'https://maps.app.goo.gl/fx8NXqH8TPsm2hmv7',
+    },
+    link: 'https://www.facebook.com/comune.galzignanoterme/posts/-56%C2%AA-sagra-del-rosario-galzignano-terme-sabato-3-domenica-4-e-luned%C3%AC-5-ottobre-2/1634650652037070/',
+    image: 'https://citynews-padovaoggi.stgy.ovh/~media/horizontal-hi/33892275711652/813966176_944107101504410_7190266860483861017_n.jpeg',
+  },
+  {
+    id: '2026-Villafranca-nella-Storia',
+    title: 'Villafranca nella Storia',
+    date: new Date('2026-10-10'),
+    endDate: new Date('2026-10-11'),
+    location: {
+      name: 'Castello Scaligero',
+      city: 'Villafranca di Verona (VR)',
+      lat: 45.349554,
+      lng: 10.842408,
+      link: 'https://maps.app.goo.gl/1XTuMWLbEpNcZYqo8',
+    },
+    link: 'https://www.facebook.com/VillafrancanellaStoria',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybb8-ykaCMaOF7r0fspS4HxoYa4Rc8q5JamscHMoI7Lk1lfBh2ArELclQ&s=10',
+  },
+  {
+    id: '2026-Autunno-Ducale-nelle-Terre-Estensi',
     title: 'Autunno Ducale nelle Terre Estensi',
     date: new Date('2026-10-24'),
     endDate: new Date('2026-10-25'),
     location: {
       name: 'Ferrara',
       city: 'Ferrara',
-      lat: 44.5,
-      lng: 11.37,
+      lat: 44.837229,
+      lng: 11.618289,
       link: 'https://maps.app.goo.gl/TYLWP51PvjCjsxdw6',
     },
     link: 'https://www.prolocoferrara.org/category/eventi/autunno-ducale/',
@@ -121,6 +232,30 @@ export const events: Event[] = [
     details: {
       description:
         "La Compagnia d'Arme del Santo Luca partecipa al tradizionale Palio di Ferrara con uno spettacolo di combattimento storico e una mostra della vita civile medievale.",
+    },
+  },
+  {
+    id: '2026-Dies-Apertus',
+    title: 'Dies Apertus',
+    date: new Date('2026-10-24'),
+    endDate: new Date('2026-10-25'),
+    location: {
+      name: 'Ferrara',
+      city: 'Ferrara',
+      lat: 44.838836,
+      lng: 11.618289,
+      link: 'https://maps.app.goo.gl/TYLWP51PvjCjsxdw6',
+    },
+    link: 'https://www.compagniadarmedelsantoluca.it/',
+    image: '/images/20261024_banner_open_day.webp',
+    details: {
+      description: `
+Sabato 24 e domenica 25 ottobre la Compagnia d'Arme del Santo Luca ti aspetta all'Open Day durante Autunno Ducale.
+Ai Giardini di Viale Cavour troverai il nostro campo d'arme: equipaggiamenti, attività quotidiane e ricostruzioni storiche.
+Ma questa volta non vogliamo soltanto mostrarti quello che facciamo.
+Vogliamo anche farti conoscere la Compagnia e spiegarti come si può iniziare a farne parte.
+Se vivi a Ferrara o nei dintorni e cerchi un'esperienza diversa, vieni a parlarci.
+`,
     },
   },
   {
