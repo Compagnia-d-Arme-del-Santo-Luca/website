@@ -9,6 +9,7 @@ import type { Event } from './types.js'
 interface ListViewProps {
   events: Event[]
   onSelect: (event: Event) => void
+  yearSelector?: React.ReactNode
 }
 
 const formatDateRange = (date: Date, endDate?: Date): string => {
@@ -92,13 +93,14 @@ const ListView: React.FC<ListViewProps> = ({ events, onSelect }) => {
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, width: '100%', minWidth: 0, pb: 4 }}>
       {eventGroups.upcoming.length > 0 && (
         <>
-          <Typography variant="h5" sx={{ textAlign: 'center', mt: 4, mb: 2 }}>
+          <Typography variant="h5" sx={{ textAlign: 'center', mt: 4 }}>
             Prossimi eventi
           </Typography>
           <Box
             role="region"
             aria-label="prossimi eventi"
             sx={{
+              mt: 2,
               display: 'grid',
               width: '100%',
               minWidth: 0,

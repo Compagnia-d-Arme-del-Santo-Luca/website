@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Tab, Tabs, Typography } from '@mui/material'
+import { Box, FormControl, InputLabel, MenuItem, Select, Tab, Tabs, Typography } from '@mui/material'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 import MapIcon from '@mui/icons-material/Map'
 
@@ -15,8 +15,14 @@ type ViewTab = 'list' | 'map'
 
 const EventsPage = () => {
   const [tab, setTab] = React.useState<ViewTab>('list')
-  // const [selectedTab, setSelectedTab] = React.useState<ViewTab>('list')
   const [selectedEvent, setSelectedEvent] = React.useState<Event | null>(null)
+  const currentYear = new Date().getFullYear()
+  const [selectedYear, setSelectedYear] = React.useState(currentYear)
+  const years = React.useMemo(
+    () => [...new Set([currentYear, ...events.map(event => event.date.getFullYear())])].sort((a, b) => b - a),
+    [currentYear]
+  )
+  const selectedEvents = React.useMemo(() => events.filter(event => event.date.getFullYear() === selectedYear), [selectedYear])
 
   return (
     <Page
@@ -39,11 +45,31 @@ const EventsPage = () => {
         </Tabs>
       </Box>
 
-      {tab === 'list' && <ListView events={events} onSelect={setSelectedEvent} />}
+      <Box sx={{ display: 'flex', justifyContent: 'center', py: 2 }}>
+        <FormControl size="small" sx={{ minWidth: 160 }}>
+          <InputLabel id="event-year-label">Anno</InputLabel>
+          <Select
+            labelId="event-year-label"
+            id="event-year"
+            value={selectedYear}
+            label="Anno"
+            onChange={event => setSelectedYear(Number(event.target.value))}>
+            {years.map(year => (
+              <MenuItem key={year} value={year}>
+                {year}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Box>
+
+      {tab === 'list' && <ListView events={selectedEvents} onSelect={setSelectedEvent} />}
       {tab === 'map' && (
-        <React.Suspense fallback={null}>
-          <MapView events={events} onSelect={setSelectedEvent} />
-        </React.Suspense>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, width: '100%', minWidth: 0, mb: 2, mt: 2 }}>
+          <React.Suspense fallback={null}>
+            <MapView events={selectedEvents} onSelect={setSelectedEvent} />
+          </React.Suspense>
+        </Box>
       )}
 
       <EventDialog event={selectedEvent} onClose={() => setSelectedEvent(null)} />
