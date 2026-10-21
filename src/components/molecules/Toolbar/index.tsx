@@ -101,6 +101,11 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
             <ListItemText primary="Personaggi" />
           </DrawerButton>
         </ListItem>
+        <ListItem key="Eventi" disablePadding>
+          <DrawerButton component={RouterLink} to="/events">
+            <ListItemText primary="Eventi" />
+          </DrawerButton>
+        </ListItem>
         <ListItem key="Contatti" disablePadding>
           <DrawerButton component={RouterLink} to="/contacts">
             <ListItemText primary="Contatti" />
@@ -163,9 +168,9 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
             Compagnia d'Arme del Santo Luca
           </AppBarLink>
           <Stack component="div" direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
-            <AppBarLink to="/">Home</AppBarLink>
             <AppBarLink to="/activities">Attività</AppBarLink>
             <AppBarLink to="/people">Personaggi</AppBarLink>
+            <AppBarLink to="/events">Eventi</AppBarLink>
             <Button component={RouterLink} to="/contacts" color="primary" variant="contained" sx={{ textTransform: 'none' }}>
               <Typography variant="h6">Contattaci</Typography>
             </Button>

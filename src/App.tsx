@@ -8,6 +8,7 @@ import Loading from 'components/molecules/LoadingScreen/index.js'
 const MainPage = React.lazy(() => import('components/pages/MainPage/index.js'))
 const PeoplePage = React.lazy(() => import('components/pages/PeoplePage/index.js'))
 const ActivitiesPage = React.lazy(() => import('components/pages/ActivitiesPage/index.js'))
+const EventsPage = React.lazy(() => import('components/pages/EventsPage/index.js'))
 const ContactPage = React.lazy(() => import('components/pages/ContactPage/index.js'))
 const PrivacyPage = React.lazy(() => import('components/pages/PrivacyPage/index.js'))
 const BusinessCardPage = React.lazy(() => import('components/pages/BusinessCardPage/index.js'))
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
         element: (
           <React.Suspense fallback={<Loading />}>
             <ActivitiesPage />
+          </React.Suspense>
+        ),
+      },
+      {
+        path: 'events',
+        element: (
+          <React.Suspense fallback={<Loading />}>
+            <EventsPage />
           </React.Suspense>
         ),
       },
