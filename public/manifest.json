@@ -1,8 +1,8 @@
 {
-  "short_name": "m-tartari",
+  "short_name": "casl-website",
   "name": "Compagnia d'Arme del Santo Luca",
   "version": "1.0.0",
-  "description": "Robotics/Full Stack Software Engineer",
+  "description": "XIV-XV century historical reenactment group based in Ferrara, Italy.",
   "icons": [
     {
       "src": "logo.png",
