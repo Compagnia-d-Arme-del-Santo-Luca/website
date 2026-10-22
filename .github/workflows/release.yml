@@ -46,8 +46,8 @@ jobs:
           if [[ -n "${{ vars.VITE_BC_POSITION }}" ]]; then
             echo "VITE_BC_POSITION=${{ vars.VITE_BC_POSITION }}" >> .env
           fi
-          if [[ -n "${{ vars.VITE_BC_VAT }}" ]]; then
-            echo "VITE_BC_VAT=${{ vars.VITE_BC_VAT }}" >> .env
+          if [[ -n "${{ vars.VITE_BC_INSTAGRAM }}" ]]; then
+            echo "VITE_BC_INSTAGRAM=${{ vars.VITE_BC_INSTAGRAM }}" >> .env
           fi
           if [[ -n "${{ vars.VITE_BC_FACEBOOK }}" ]]; then
             echo "VITE_BC_FACEBOOK=${{ vars.VITE_BC_FACEBOOK }}" >> .env
@@ -57,6 +57,9 @@ jobs:
           fi
           if [[ -n "${{ secrets.VITE_BC_EMAIL }}" ]]; then
             echo "VITE_BC_EMAIL=${{ secrets.VITE_BC_EMAIL }}" >> .env
+          fi
+          if [[ -n "${{ secrets.VITE_EV_CARTO_KEY }}" ]]; then
+            echo "VITE_EV_CARTO_KEY=${{ secrets.VITE_EV_CARTO_KEY }}" >> .env
           fi
 
       - name: Install dependencies
