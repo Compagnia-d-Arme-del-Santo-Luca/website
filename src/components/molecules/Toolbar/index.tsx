@@ -121,18 +121,29 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
         elevation={theme.palette.mode === 'light' ? 1 : 0}
         {...props}
         sx={{
+          left: '50%',
+          right: 'auto',
+          top: 8,
+          width: 'calc(100% - 32px)',
+          maxWidth: theme.breakpoints.values.lg,
+          transform: 'translateX(-50%)',
+          borderRadius: 3,
+          overflow: 'hidden',
           backgroundColor: 'transparent',
+          color: theme.palette.text.primary,
           '@media print': { backgroundColor: 'background.default' },
           ...(trigger && {
             backgroundColor: 'hsla(155, 18%, 13%, 0.75)',
+            border: '1px solid hsla(155, 18%, 23%, 0.9)',
             backdropFilter: 'blur(8px)',
             boxShadow: theme.shadows[4],
           }),
           ...(theme.palette.mode === 'light' && {
             backgroundColor: 'hsla(0, 0%, 100%, 0.75)',
             backdropFilter: 'blur(8px)',
+            boxShadow: theme.shadows[4],
           }),
-          transition: theme.transitions.create('background-color', {
+          transition: theme.transitions.create(['background-color', 'box-shadow'], {
             duration: theme.transitions.duration.shorter,
             easing: theme.transitions.easing.easeInOut,
           }),
@@ -142,8 +153,7 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ drawerWidth = 240, window
           sx={{
             display: 'flex',
             alignItems: 'center',
-            // maxWidth: '100%',
-            // [theme.breakpoints.up('md')]: { width: theme => theme.breakpoints.values.lg, mx: 'auto' },
+            px: `${theme.spacing(2)} !important`,
           }}>
           <IconButton
             aria-label="open drawer"
