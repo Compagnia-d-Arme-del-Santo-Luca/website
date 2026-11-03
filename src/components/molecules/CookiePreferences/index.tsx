@@ -15,8 +15,8 @@ const CookieConsent: React.FC<CookieConsentProps> = () => {
       </SectionHeader>
 
       <Typography component="p" color="textSecondary">
-        La Compagnia d'Arme del Santo Luca, con sede in via Leonello Poletti n. 16, 44122 Ferrara, Titolare del trattamento dei dati, informa gli
-        utenti del sito {window.location.host} di non utilizzare alcun tipo di coockie per il funzionamento di suddetto sito web.
+        La Compagnia d'Arme del Santo Luca, con sede in via Arginone n.171, 44122 Ferrara, Titolare del trattamento dei dati, informa gli utenti del
+        sito {window.location.host} di non utilizzare alcun tipo di coockie per il funzionamento di suddetto sito web.
       </Typography>
     </Box>
   )
