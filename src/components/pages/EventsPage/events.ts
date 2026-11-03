@@ -2,6 +2,25 @@ import type { Event } from './types.js'
 
 export const events: Event[] = [
   {
+    id: '2027-armi-e-bagagli',
+    title: 'Armi e Bagagli',
+    date: new Date('2027-03-20'),
+    endDate: new Date('2027-03-21'),
+    location: {
+      name: 'Piacenza Expo',
+      city: 'Piacenza (PC)',
+      lat: 45.0423607,
+      lng: 9.75375,
+      link: 'https://maps.app.goo.gl/FQAtyyK5zCZyaGzx9',
+    },
+    link: 'https://armiebagagli.org/',
+    image: 'images/events/2027/armi-e-bagagli.webp',
+    details: {
+      description:
+        'La più grande manifestazione italiana per operatori e appassionati della Rievocazione Storica, presso il quartiere fieristico di Piacenza, appuntamento imperdibile per chiunque operi nel settore storico/rievocativo.',
+    },
+  },
+  {
     id: '2026-Battaglia-di-Castagnaro',
     title: 'Battaglia di Castagnaro',
     date: new Date('2026-03-15'),
