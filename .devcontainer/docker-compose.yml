@@ -1,12 +1,7 @@
 services:
   devcontainer:
-    image: website-dev
-    build:
-      context: ..
-      dockerfile: Dockerfile
-      target: development
-    container_name: devcontainer-website
-    hostname: website-dev
+    image: mcr.microsoft.com/devcontainers/typescript-node
+    container_name: casl-website-devcontainer
     command: sleep infinity
     # ports:
     #   - '5173:5173'
