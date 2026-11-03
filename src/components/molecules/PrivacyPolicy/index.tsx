@@ -23,10 +23,10 @@ const PrivacyPolicy = () => (
       sx={{
         pb: 4,
       }}>
-      Data ultimo aggiornamento: Feb. 1, 2026
+      Data ultimo aggiornamento: Nov. 3, 2026
     </Typography>
 
-    <SectionSubheader>Introduction</SectionSubheader>
+    <SectionSubheader>Introduzione</SectionSubheader>
     <Typography component="p" color="textSecondary">
       L'informativa è resa solo per il sito web ufficiale di la Compagnia d'Arme del Santo Luca all'indirizzo https://{window.location.host} e non per
       altri siti web esterni, eventualmente consultati dall'utente tramite link.
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => (
 
     <SectionSubheader sx={{ mt: 4 }}>Titolare del trattamento</SectionSubheader>
     <Typography component="p" color="textSecondary">
-      Il Titolare del trattamento è la Compagnia d'Arme del Santo Luca, con sede legale in via Leonello Poletti n. 16, 44122 Ferrara.
+      Il Titolare del trattamento è la Compagnia d'Arme del Santo Luca, con sede legale in via Arginone n.171, 44122 Ferrara.
     </Typography>
 
     <SectionSubheader sx={{ mt: 4 }}> Responsabile Protezione Dati (DPO)</SectionSubheader>
